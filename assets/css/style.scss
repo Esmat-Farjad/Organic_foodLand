@@ -56,6 +56,10 @@
     button{
         margin: 1rem 0;
     }
+    
+}
+.apply-animation{
+    animation: slideLeft 1.5s ease-in-out 1;
 }
 .navbar{
     margin: 0 15rem;
@@ -77,4 +81,39 @@
     color: teal;
     font-weight: 700;
     transition: all 0.5s;
+}
+// animation
+@keyframes slideLeft{
+    from {
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideRight{
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(300px);
+    }
+}
+@keyframes slideUp{
+    from {
+        transform: translateY(-300px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+@keyframes slideDown{
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateX(300px);
+    }
 }
