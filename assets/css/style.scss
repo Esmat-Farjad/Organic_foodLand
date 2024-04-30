@@ -63,7 +63,7 @@ $medium:768px;
     }
     
 }
-.apply-animation{
+.apply-animation-left{
     animation: slideLeft 1.5s ease-in-out 1;
 }
 .navbar{
@@ -101,28 +101,36 @@ $medium:768px;
 @keyframes slideRight{
     from {
         transform: translateX(0px);
+        opacity: 0;
     }
     to {
         transform: translateX(300px);
+        opacity: 1;
     }
 }
 @keyframes slideUp{
     from {
-        transform: translateY(-300px);
+        transform: translateY(300px);
+        opacity: 0;
     }
     to {
         transform: translateX(0px);
+        opacity: 1;
     }
 }
 @keyframes slideDown{
     from {
         transform: translateY(0px);
+        opacity: 0;
     }
     to {
         transform: translateX(300px);
+        opacity: 1;
     }
 }
-
+.slide-up-animation{
+    animation: slideUp 1.5s ease-in-out 1;
+}
 .card-section{
     box-sizing: border-box;
     display: flex;
@@ -130,6 +138,9 @@ $medium:768px;
     justify-content: center;
 }
 .card,.card-body, .card-footer{
+    background-color: white;
+}
+.card-footer > p {
     background-color: white;
 }
 .card-section .card{
@@ -144,12 +155,23 @@ $medium:768px;
 .card .card-footer{
     padding: 10px;
 }
-@media only screen and (max-width:$mobile) {
+@media only screen and (max-width:600px) {
     .card-section{
         box-sizing: unset;
         display: block;
     }
     .card-section .card{
         width: 99%;
+    }
+    
+}
+.description-section{
+    margin: 2rem 0;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 8px rgb(196, 194, 194);
+    padding: 2rem;
+    h1,p, strong{
+        background-color: white;
     }
 }
