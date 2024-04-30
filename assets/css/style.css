@@ -28,8 +28,12 @@
   color: white;
 }
 
+.container {
+  margin: 0 12.5%;
+}
+
 .heading-content {
-  margin: 15% auto;
+  margin: 15% 0;
   width: 60%;
   height: 20%;
 }
@@ -113,5 +117,38 @@
   }
   to {
     transform: translateX(300px);
+  }
+}
+.card-section {
+  box-sizing: border-box;
+  display: flex;
+  margin: 5rem 0;
+  justify-content: center;
+}
+
+.card, .card-body, .card-footer {
+  background-color: white;
+}
+
+.card-section .card {
+  width: 23%;
+  overflow: hidden;
+  border: 1px solid rgb(207, 207, 207);
+  box-shadow: 0 0 8px rgb(196, 194, 194);
+  border-radius: 5px;
+  margin: 1rem;
+}
+
+.card .card-footer {
+  padding: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .card-section {
+    box-sizing: unset;
+    display: block;
+  }
+  .card-section .card {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
