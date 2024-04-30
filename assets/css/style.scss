@@ -1,0 +1,35 @@
+// Google font import link
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+*{
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+   @mixin center-div{
+    display: flex;
+    justify-content: center;
+  }
+  .center-element{
+    @include center-div;
+    color: teal;
+  }
+  @mixin button{
+    background-color: teal;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    display: inline-block;
+    padding: 15px 32px;
+    margin: 3px;
+  }
+  @mixin button-hover{
+    font-weight: 600;
+    transition: all 1s;
+    background-color: rgb(2, 68, 68);
+  }
+  button[type="submit"]{
+    @include button;
+  }
+  button:hover{
+    @include button-hover();
+  }
