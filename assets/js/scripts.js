@@ -6,4 +6,8 @@
         console.log("scrolling event");
     }
 })();
-window.scrollTo()
+window.addEventListener('scroll', function(event) {
+    this.document.querySelectorAll(".card").forEach(element => {
+        element.classList.add("apply-animation");
+    });
+   });

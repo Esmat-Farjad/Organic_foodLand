@@ -131,7 +131,7 @@
 }
 
 .card-section .card {
-  width: 23%;
+  width: 25%;
   overflow: hidden;
   border: 1px solid rgb(207, 207, 207);
   box-shadow: 0 0 8px rgb(196, 194, 194);
@@ -149,6 +149,6 @@
     display: block;
   }
   .card-section .card {
-    width: 100%;
+    width: 99%;
   }
 }/*# sourceMappingURL=style.css.map */
