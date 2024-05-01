@@ -171,6 +171,17 @@ $xl:1280px;
     h1,p, strong{
         background-color: white;
     }
+    margin-bottom: 10rem;
+}
+@keyframes fadeIn {
+    from {
+        transform: translateZ(-300px);
+        opacity: 0;
+    }
+    to {
+        transform: translateZ(0px);
+        opacity: 1;
+    }
 }
 .card-section .card{
     position: relative;
@@ -197,6 +208,11 @@ $xl:1280px;
     border-radius: 12px;
     border: 1px solid rgb(94, 94, 94);
     text-transform: uppercase;
+}
+.sub-text h3{
+    margin-left: 1.5rem;
+    color: #525151;
+
 }
 // styling the screen
 // for small screen mobile device

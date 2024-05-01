@@ -167,11 +167,22 @@
   border-radius: 5px;
   box-shadow: 0 0 8px rgb(196, 194, 194);
   padding: 2rem;
+  margin-bottom: 10rem;
 }
 .description-section h1, .description-section p, .description-section strong {
   background-color: white;
 }
 
+@keyframes fadeIn {
+  from {
+    transform: translateZ(-300px);
+    opacity: 0;
+  }
+  to {
+    transform: translateZ(0px);
+    opacity: 1;
+  }
+}
 .card-section .card {
   position: relative;
   border: 1px solid rgb(197, 197, 197);
@@ -199,6 +210,11 @@
   border-radius: 12px;
   border: 1px solid rgb(94, 94, 94);
   text-transform: uppercase;
+}
+
+.sub-text h3 {
+  margin-left: 1.5rem;
+  color: #525151;
 }
 
 @media only screen and (min-width: 640px) {
