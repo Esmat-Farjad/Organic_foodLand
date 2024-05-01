@@ -10,9 +10,11 @@ window.addEventListener('scroll', function(event) {
     let position = scroll_element.getBoundingClientRect();
     // checking
     if(cardPosition.top >= 0 && cardPosition.bottom <= window.innerHeight) {
-        document.getElementById("card").style.animation="fadeIn 2s ease-in-out 1";
+       document.querySelectorAll(".card").forEach(element => {
+            element.classList.add("slide-up-animation");
+       });
     }
     if(position.top >= 0 && position.bottom <= window.innerHeight){
-        document.getElementById("text-body").style.animation="fadeIn 2s ease-in-out 1";
+        document.querySelector(".description-section").classList.add("slide-left-animation");
     }
 });

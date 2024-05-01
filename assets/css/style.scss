@@ -112,7 +112,7 @@ $xl:1280px;
 }
 @keyframes slideUp{
     from {
-        transform: translateY(300px);
+        transform: translateY(50px);
         opacity: 0;
     }
     to {
@@ -132,6 +132,9 @@ $xl:1280px;
 }
 .slide-up-animation{
     animation: slideUp 1.5s ease-in-out 1;
+}
+.slide-left-animation{
+    animation: slideLeft 1.5s ease-in-out 1;
 }
 
 .card > *{
