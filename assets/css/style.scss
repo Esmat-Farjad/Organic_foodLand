@@ -170,15 +170,41 @@ body{
 }
 
 .description-section{
-    margin: 2rem 0;
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 0 8px rgb(196, 194, 194);
     padding: 2rem;
-    h1,p, strong{
+    margin-bottom: 1rem;
+    h1{
+        background-color: white;
+        @include center-div();
+        color: teal;
+        margin-bottom: 0;
+    }
+    span{
+        @include center-div();
+        font-weight: bold;
         background-color: white;
     }
-    margin-bottom: 10rem;
+    .contact{
+        background-color: white;
+        width: 18rem;
+        height: auto;
+        margin: auto;
+        border: 1px solid rgb(224, 224, 224);
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+    }
+    .contact-info{
+        background-color: white;
+        margin: 2rem 0;
+    }
+    .contact .title{
+        font-weight: bold;
+    }
+    .contact .subtitle{
+        font-weight: lighter;
+    }
 }
 @keyframes fadeIn {
     from {
@@ -234,14 +260,7 @@ body{
     list-style: none;
     padding: 5px;
 }
-.contact-info .contact{
-    background-color: white;
-    padding: 5px;
-    margin-bottom: 2rem;
-    width: 20rem;
-    height: 18rem;
-    border: 1px solid red;
-}
+
 .location{
     background-color: white;
 }
@@ -300,17 +319,14 @@ textarea:focus{
 
 }
 .icon-design{
-    border: 1px dotted black;
+    border: 1px dotted teal;
+    color: teal;
     padding: 5px;
     border-radius: 16px;
     margin: 2px;
     cursor:default;
 }
-.icon-design:hover{
-    color: teal;
-    border: 1px dotted teal;
-    transition: all 0.5s ease-in-out;
-}
+
 // styling the screen
 // for small screen mobile device
 @media only screen and (min-width:$sm) {
