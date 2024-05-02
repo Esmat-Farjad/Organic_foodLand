@@ -102,11 +102,11 @@ body {
 }
 @keyframes slideRight {
   from {
-    transform: translateX(0px);
+    transform: translateX(300px);
     opacity: 0;
   }
   to {
-    transform: translateX(300px);
+    transform: translateX(0px);
     opacity: 1;
   }
 }
@@ -283,8 +283,8 @@ body {
 
 .location-holder {
   display: inline;
-  border: 1px solid red;
   overflow: hidden;
+  animation: slideLeft 1.5s ease-in-out 1;
 }
 
 .contact-us, form, .holder, label, input, textarea {
@@ -306,6 +306,7 @@ textarea:focus {
 
 .contact-us .contact-form {
   padding: 2rem 4rem;
+  animation: slideRight 1.5s ease-in-out 1;
 }
 .contact-us .contact-form label {
   display: block;
