@@ -1,6 +1,8 @@
 // self executing function
 (function() {
     document.querySelector(".heading-content").classList.add("apply-animation-left");
+  document.querySelector(".nav-items").classList.add("d-none");
+  document.querySelector(".close-icon").classList.add("d-none");
 
 })();
 window.addEventListener('scroll', function(event) {
@@ -17,3 +19,17 @@ window.addEventListener('scroll', function(event) {
         document.querySelector(".contact-form").classList.add("slide-right-animation");
     }
 });
+const openMenu = document.querySelector(".open-icon").addEventListener("click", function(){
+    let menuhHolder = document.querySelector(".nav-items");
+    let closeMenu = document.querySelector(".close-icon");
+    if(menuhHolder.classList.contains("d-none") && closeMenu.classList.contains("d-none"))
+    {
+        menuhHolder.classList.remove("d-none");
+        menuhHolder.classList.add("active-block");
+        closeMenu.classList.remove("d-none");
+        closeMenu.classList.add("active");
+        document.querySelector(".open-icon").classList.add("d-none");
+        
+    }
+});
+
