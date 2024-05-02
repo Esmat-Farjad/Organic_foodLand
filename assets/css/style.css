@@ -6,9 +6,27 @@
   background-color: #F7F6F3;
 }
 
+.text-teal {
+  color: teal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+a:hover {
+  color: teal;
+  transition: all 0.5s ease-in-out;
 }
 
 .center-element {
@@ -259,20 +277,20 @@ body {
 }
 
 .footer {
-  padding: 5rem;
+  padding: 2rem 5rem;
   position: sticky;
   margin-top: 3rem;
   border-top: 1px solid rgb(235, 235, 235);
 }
 
-.footer .footer-content {
-  display: inline-block;
-  border: 1px solid gray;
+.footer-content {
+  margin: 1rem 0;
 }
 
-.footer-content ul li {
-  list-style: none;
-  padding: 5px;
+.footer-content a {
+  padding: 0.8rem;
+  cursor: pointer;
+  display: block;
 }
 
 .location {
@@ -309,14 +327,14 @@ textarea:focus {
 }
 
 .contact-us .contact-form {
-  padding: 2rem 4rem;
+  padding: 2rem 5rem;
 }
 .contact-us .contact-form label {
   display: block;
   margin-top: 1rem;
 }
 .contact-us .contact-form input {
-  width: 21rem;
+  width: 100%;
 }
 .contact-us .contact-form textarea {
   width: 100%;
@@ -371,6 +389,10 @@ textarea:focus {
     -moz-column-count: 1;
          column-count: 1;
   }
+  .footer .footer-content {
+    -moz-column-count: 2;
+         column-count: 2;
+  }
 }
 @media only screen and (min-width: 768px) {
   .card-section {
@@ -390,6 +412,10 @@ textarea:focus {
     -moz-column-count: 1;
          column-count: 1;
   }
+  .footer .footer-content {
+    -moz-column-count: 2;
+         column-count: 2;
+  }
 }
 @media only screen and (min-width: 1024px) {
   .card-section {
@@ -408,5 +434,27 @@ textarea:focus {
   .contact-info {
     -moz-column-count: 3;
          column-count: 3;
+  }
+  .footer .footer-content {
+    -moz-column-count: 3;
+         column-count: 3;
+  }
+}
+.footer .branding h2 {
+  color: teal;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.footer .branding span {
+  padding-bottom: 1rem;
+  border-bottom: 5px dotted teal;
+}
+
+@keyframes movingLine {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

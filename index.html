@@ -8,7 +8,7 @@
     <title>Tools</title>
 </head>
 <body>
-    <div class="navbar">
+    <div class="navbar" id="home">
         <div class="logo-holder">
             <span class="brand-logo">BlogLand</span>
         </div>
@@ -24,11 +24,11 @@
             <h4 class="heading-sub-text">We are here to communicate some interesting things</h4>
             <button type="button" class="page-button">Get Started</button>
         </div>
-        <div class="sub-text">
+        <div class="sub-text" id="card">
             <h3>Latest Recipes</h3>
         </div>
         <div class="card-section">
-            <div class="card" id="card">
+            <div class="card">
                 <div class="card-body">
                     <img src="assets/images/food.avif" alt="Image Placeholder">
                 </div>
@@ -41,7 +41,6 @@
                     34 min
                 </span>
             </div>
-
             <div class="card" id="card">
                 <div class="card-body">
                     <img src="assets/images/food.avif" alt="Image Placeholder">
@@ -82,7 +81,7 @@
                 </span> 
             </div>
         </div>
-        <div class="description-section">
+        <div class="description-section" id="contact">
             <h1>Contact Us</h1>
             <span>feel free to contact us every time you need</span>
             <div class="contact-info">
@@ -139,11 +138,23 @@
     </div>
     <div class="footer">
         <div class="footer-content">
-            <ul>
-                <li>Home</li>
-                <li>about</li>
-                <li>services</li>
-            </ul>
+            <div class="footer-link">
+                <a href="#home"><i class="fa-solid fa-house icon-design"></i>&nbsp;Home</a>
+                <a href="#card"><i class="fa-solid fa-utensils icon-design"></i>&nbsp;Recipe</a>
+                <a href="#contact"><i class="fa-brands fa-telegram icon-design"></i>&nbsp;Contact us</a>
+            </div>
+            <div class="footer-link">
+                <a href="#home"><i class="fa-solid fa-clock-rotate-left icon-design"></i>&nbsp;History</a>
+                <a href="#card"><i class="fa-solid fa-basket-shopping icon-design"></i>&nbsp;Cart</a>
+                <a href="#contact"><i class="fa-solid fa-heart icon-design"></i>&nbsp;Favorite</a>
+            </div>
+            <div class="branding">
+                <h2>BlogLand</h2>
+                <span>Welcome to blogland and enjoy</span>
+            </div>
+        </div>
+        <div class="center-div">
+            <span class="center-element">&COPY; 2024&nbsp;<span class="text-teal">BlogLand</span>. All Right Reserved.</span>
         </div>
     </div>
 </body>
