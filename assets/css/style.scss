@@ -22,6 +22,7 @@ body{
     margin: 0;
     padding: 0;
 }
+
 a{
     text-decoration: none;
     color: gray;
@@ -62,48 +63,49 @@ a:hover{
 .container{
     margin: 0 12.5%;
 }
+.home{
+    max-height: 90vh;
+    position: relative;
+    img{
+        z-index: -1;
+    }
+}
 .heading-content{
+    position: absolute;
+    top: 5%;
+    left: 10%;
     margin: 15% 0;
     width: 60%;
     height: 20%;
+    z-index: 1;
+    background-color: transparent;
     .heading-text{
         font-size: 48px;
         font-weight: bold;
         text-transform: uppercase;
         margin: 0;
         padding: 0;
+        background-color: transparent;
     }
     .brand-name{
         color: teal;
+        background-color: transparent;
     }
     .heading-sub-text{
         margin: 0;
         padding: 0;
+        background-color: transparent;
     }
     button{
         margin: 1rem 0;
+        background-color: transparent;
     }
     
 }
 .apply-animation-left{
     animation: slideLeft 1.5s ease-in-out 1;
 }
-.navbar{
-    margin: 0 15rem;
-}
-.navbar .logo-holder{
-    display: inline-block;
-    font-size: 26px;
-    font-weight: bold;
-    color: teal;
-}
-.nav-items,.nav-link{
-    display: inline-block;
-}
-.nav-items .nav-link{
-    margin: 0 2rem;
-    cursor: pointer;
-}
+
 .nav-items .nav-link:hover{
     color: teal;
     font-weight: 700;
@@ -347,10 +349,46 @@ textarea:focus{
     margin: 2px;
     cursor:default;
 }
-
+.active-block{
+    display: block;
+}
+.active{
+    display: inline-block;
+}
+.d-none{
+    display: none;
+}
 // styling the screen
 // for small screen mobile device
 @media only screen and (min-width:$sm) {
+    .navbar{
+        margin: 0 2rem;
+    }
+    .navbar .logo-holder{
+        padding: 0.8rem;
+        color: teal;
+    }
+    .navbar .logo-holder .brand-logo{
+        font-size: 26px;
+        font-weight: bold;
+    }
+    .navbar .nav-items{
+        list-style: none;
+        border: 1px solid rgb(207, 207, 207);
+        padding: 0.8rem 0.5rem;
+    }
+    .navbar .nav-items .nav-link{
+        padding: 0.8rem 0;
+        cursor: pointer;
+    }
+    .navbar .logo-holder .icon-holder{
+        padding: 5px;
+        font-size: 20px;
+        float: inline-end;
+        cursor: pointer;
+    }
+
+    // navbar end
     .card-section{
         box-sizing: unset;
         display: block;
@@ -371,6 +409,34 @@ textarea:focus{
     }
 }
 @media only screen and (min-width:$md) {
+    // navbar
+    .navbar{
+        margin: 0 2rem;
+    }
+    .navbar .logo-holder{
+        padding: 0.8rem;
+        color: teal;
+        .brand-logo{
+            font-size: 26px;
+            font-weight: bold;
+        }
+    }
+    .navbar .nav-items{
+        list-style: none;
+        border: 1px solid rgb(207, 207, 207);
+        padding: 0.8rem 0.5rem;
+    }
+    .navbar .nav-items .nav-link{
+        padding: 0.8rem 0;
+        cursor: pointer;
+    }
+    .navbar .logo-holder .icon-holder{
+        padding: 5px;
+        font-size: 20px;
+        float: inline-end;
+        cursor: pointer;
+    }
+    // navbar end
     .card-section{
         box-sizing: unset;
         display: block;
@@ -390,7 +456,32 @@ textarea:focus{
         column-count: 2;
     }
 }
+
 @media only screen and (min-width:$lg) {
+    .navbar{
+        margin: 0 15rem;
+    }
+    .navbar .logo-holder{
+        display: inline-block;
+        font-size: 26px;
+        font-weight: bold;
+        color: teal;
+        padding: 1.5rem 0;
+    }
+    .navbar .nav-items{
+        border: none;
+    }
+    .navbar .nav-items,.nav-link{
+        display: inline-block;
+       
+    }
+    .nav-items .nav-link{
+        margin: 0 2rem;
+        cursor: pointer;
+    }
+    .navbar .logo-holder .icon-holder{
+        display: none;
+    }
     .card-section{
         box-sizing: border-box;
         display: flex;
