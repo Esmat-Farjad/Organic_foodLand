@@ -140,6 +140,9 @@ body{
 .slide-left-animation{
     animation: slideLeft 1.5s ease-in-out 1;
 }
+.slide-right-animation{
+    animation: slideRight 1.5s ease-in-out 1;
+}
 
 .card > *{
     background-color: white;
@@ -251,6 +254,7 @@ body{
     padding: 5rem;
     position: sticky;
     margin-top: 3rem;
+    border-top: 1px solid rgb(235, 235, 235);
 }
 .footer .footer-content{
     display: inline-block;
@@ -274,7 +278,6 @@ body{
 .location-holder{
     display: inline;
     overflow: hidden;
-    animation: slideLeft 1.5s ease-in-out 1;
 }
 .contact-us,form,.holder,label,input,textarea{
     background-color: white;
@@ -317,7 +320,7 @@ textarea:focus{
         @include center-div();
         background-color: white;
     }
-    animation: slideRight 1.5s ease-in-out 1;
+    
 
 }
 .icon-design{
