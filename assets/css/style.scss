@@ -10,6 +10,10 @@ $xl:1280px;
     font-style: normal;
     background-color: #F7F6F3;
 }
+body{
+    margin: 0;
+    padding: 0;
+}
 @mixin center-div{
     display: flex;
     justify-content: center;
@@ -217,6 +221,96 @@ $xl:1280px;
     color: #525151;
 
 }
+.footer{
+    padding: 5rem;
+    position: sticky;
+    margin-top: 3rem;
+}
+.footer .footer-content{
+    display: inline-block;
+    border: 1px solid gray;
+}
+.footer-content ul li{
+    list-style: none;
+    padding: 5px;
+}
+.contact-info .contact{
+    background-color: white;
+    padding: 5px;
+    margin-bottom: 2rem;
+    width: 20rem;
+    height: 18rem;
+    border: 1px solid red;
+}
+.location{
+    background-color: white;
+}
+.location{
+    padding: 5px;
+    border: 1px solid #d4d4d4;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(204, 204, 204);
+    
+}
+.location-holder{
+    display: inline;
+    border: 1px solid red;
+    overflow: hidden;
+}
+.contact-us,form,.holder,label,input,textarea{
+    background-color: white;
+}
+input,textarea{
+    padding: 0.8rem;
+    outline: none;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 5px;
+
+}
+input:focus,
+textarea:focus{
+    border: 1px solid teal;
+    transition: all 0.5s ease-in-out;
+}
+.contact-us .contact-form{
+    padding: 2rem 4rem;
+    label{
+        display: block;
+        margin-top: 1rem;
+    }
+    input{
+        width: 21rem;
+    }
+    textarea{
+        width: 100%;
+    }
+    button{
+        @include button();
+        margin-top: 1rem;
+    }
+    button:hover{
+        @include button-hover();
+    }
+    .form-title{
+        font-weight: bold;
+        color: teal;
+        @include center-div();
+        background-color: white;
+    }
+
+}
+.icon-design{
+    border: 1px dotted black;
+    padding: 5px;
+    border-radius: 16px;
+    margin: 2px;
+    cursor:default;
+}
+.icon-design:hover{
+    color: teal;
+    border: 1px dotted teal;
+    transition: all 0.5s ease-in-out;
+}
 // styling the screen
 // for small screen mobile device
 @media only screen and (min-width:$sm) {
@@ -229,6 +323,13 @@ $xl:1280px;
         height: 25%;
         padding-bottom: 0.5rem;
     }
+    .location{
+        column-count: 1;
+    }
+    .contact-info{
+        column-count: 1;
+    }
+    
 }
 @media only screen and (min-width:$md) {
     .card-section{
@@ -240,6 +341,12 @@ $xl:1280px;
         height: 25%;
         padding-bottom: 0.5rem;
     }
+    .location{
+        column-count: 1;
+    }
+    .contact-info{
+        column-count: 1;
+    }
 }
 @media only screen and (min-width:$lg) {
     .card-section{
@@ -250,5 +357,11 @@ $xl:1280px;
         width: 100%;
         height: 25%;
         padding-bottom: 0.5rem;
+    }
+    .location{
+        column-count: 2;
+    }
+    .contact-info{
+        column-count: 3;
     }
 }

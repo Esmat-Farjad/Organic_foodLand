@@ -6,6 +6,11 @@
   background-color: #F7F6F3;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .center-element {
   display: flex;
   justify-content: center;
@@ -221,6 +226,115 @@
   color: #525151;
 }
 
+.footer {
+  padding: 5rem;
+  position: sticky;
+  margin-top: 3rem;
+}
+
+.footer .footer-content {
+  display: inline-block;
+  border: 1px solid gray;
+}
+
+.footer-content ul li {
+  list-style: none;
+  padding: 5px;
+}
+
+.contact-info .contact {
+  background-color: white;
+  padding: 5px;
+  margin-bottom: 2rem;
+  width: 20rem;
+  height: 18rem;
+  border: 1px solid red;
+}
+
+.location {
+  background-color: white;
+}
+
+.location {
+  padding: 5px;
+  border: 1px solid #d4d4d4;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgb(204, 204, 204);
+}
+
+.location-holder {
+  display: inline;
+  border: 1px solid red;
+  overflow: hidden;
+}
+
+.contact-us, form, .holder, label, input, textarea {
+  background-color: white;
+}
+
+input, textarea {
+  padding: 0.8rem;
+  outline: none;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 5px;
+}
+
+input:focus,
+textarea:focus {
+  border: 1px solid teal;
+  transition: all 0.5s ease-in-out;
+}
+
+.contact-us .contact-form {
+  padding: 2rem 4rem;
+}
+.contact-us .contact-form label {
+  display: block;
+  margin-top: 1rem;
+}
+.contact-us .contact-form input {
+  width: 21rem;
+}
+.contact-us .contact-form textarea {
+  width: 100%;
+}
+.contact-us .contact-form button {
+  color: teal;
+  font-weight: 600;
+  border: 1px solid teal;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+.contact-us .contact-form button:hover {
+  font-weight: bold;
+  transition: all 0.5s;
+  background-color: teal;
+  color: white;
+}
+.contact-us .contact-form .form-title {
+  font-weight: bold;
+  color: teal;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.icon-design {
+  border: 1px dotted black;
+  padding: 5px;
+  border-radius: 16px;
+  margin: 2px;
+  cursor: default;
+}
+
+.icon-design:hover {
+  color: teal;
+  border: 1px dotted teal;
+  transition: all 0.5s ease-in-out;
+}
+
 @media only screen and (min-width: 640px) {
   .card-section {
     box-sizing: unset;
@@ -230,6 +344,14 @@
     width: 100%;
     height: 25%;
     padding-bottom: 0.5rem;
+  }
+  .location {
+    -moz-column-count: 1;
+         column-count: 1;
+  }
+  .contact-info {
+    -moz-column-count: 1;
+         column-count: 1;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -242,6 +364,14 @@
     height: 25%;
     padding-bottom: 0.5rem;
   }
+  .location {
+    -moz-column-count: 1;
+         column-count: 1;
+  }
+  .contact-info {
+    -moz-column-count: 1;
+         column-count: 1;
+  }
 }
 @media only screen and (min-width: 1024px) {
   .card-section {
@@ -252,5 +382,13 @@
     width: 100%;
     height: 25%;
     padding-bottom: 0.5rem;
+  }
+  .location {
+    -moz-column-count: 2;
+         column-count: 2;
+  }
+  .contact-info {
+    -moz-column-count: 3;
+         column-count: 3;
   }
 }/*# sourceMappingURL=style.css.map */
