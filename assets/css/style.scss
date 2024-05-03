@@ -360,6 +360,58 @@ textarea:focus{
 }
 // styling the screen
 // for small screen mobile device
+@media only screen and (max-width:$sm) {
+    .navbar{
+        margin: 0 2rem;
+    }
+    .navbar .logo-holder{
+        padding: 0.8rem;
+        color: teal;
+    }
+    .navbar .logo-holder .brand-logo{
+        font-size: 26px;
+        font-weight: bold;
+    }
+    .navbar .nav-items{
+        list-style: none;
+        border: 1px solid rgb(207, 207, 207);
+        padding: 0.8rem 0.5rem;
+    }
+    .navbar .nav-items .nav-link{
+        padding: 0.8rem 0;
+        cursor: pointer;
+    }
+    .navbar .logo-holder .icon-holder{
+        padding: 5px;
+        font-size: 20px;
+        float: inline-end;
+        cursor: pointer;
+    }
+    .location .location-holder iframe{
+        width: 100%;
+        height: 25rem;
+    }
+
+    // navbar end
+    .card-section{
+        box-sizing: unset;
+        display: block;
+    }
+    .card-section .card{
+        width: 100%;
+        height: 25%;
+        padding-bottom: 0.5rem;
+    }
+    .location{
+        column-count: 1;
+    }
+    .contact-info{
+        column-count: 1;
+    }
+    .footer .footer-content{
+        column-count: 2;
+    }
+}
 @media only screen and (min-width:$sm) {
     .navbar{
         margin: 0 2rem;
@@ -386,6 +438,10 @@ textarea:focus{
         font-size: 20px;
         float: inline-end;
         cursor: pointer;
+    }
+    .location .location-holder iframe{
+        width: 100%;
+        height: 25rem;
     }
 
     // navbar end

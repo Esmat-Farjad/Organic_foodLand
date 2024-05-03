@@ -380,6 +380,59 @@ textarea:focus {
   display: none;
 }
 
+@media only screen and (max-width: 640px) {
+  .navbar {
+    margin: 0 2rem;
+  }
+  .navbar .logo-holder {
+    padding: 0.8rem;
+    color: teal;
+  }
+  .navbar .logo-holder .brand-logo {
+    font-size: 26px;
+    font-weight: bold;
+  }
+  .navbar .nav-items {
+    list-style: none;
+    border: 1px solid rgb(207, 207, 207);
+    padding: 0.8rem 0.5rem;
+  }
+  .navbar .nav-items .nav-link {
+    padding: 0.8rem 0;
+    cursor: pointer;
+  }
+  .navbar .logo-holder .icon-holder {
+    padding: 5px;
+    font-size: 20px;
+    float: inline-end;
+    cursor: pointer;
+  }
+  .location .location-holder iframe {
+    width: 100%;
+    height: 25rem;
+  }
+  .card-section {
+    box-sizing: unset;
+    display: block;
+  }
+  .card-section .card {
+    width: 100%;
+    height: 25%;
+    padding-bottom: 0.5rem;
+  }
+  .location {
+    -moz-column-count: 1;
+         column-count: 1;
+  }
+  .contact-info {
+    -moz-column-count: 1;
+         column-count: 1;
+  }
+  .footer .footer-content {
+    -moz-column-count: 2;
+         column-count: 2;
+  }
+}
 @media only screen and (min-width: 640px) {
   .navbar {
     margin: 0 2rem;
@@ -406,6 +459,10 @@ textarea:focus {
     font-size: 20px;
     float: inline-end;
     cursor: pointer;
+  }
+  .location .location-holder iframe {
+    width: 100%;
+    height: 25rem;
   }
   .card-section {
     box-sizing: unset;
