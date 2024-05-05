@@ -32,4 +32,17 @@ const openMenu = document.querySelector(".open-icon").addEventListener("click", 
         
     }
 });
+const closeMenu = document.querySelector(".close-icon").addEventListener("click", function(){
+    let menuhHolder = document.querySelector(".nav-items");
+    let openMenu = document.querySelector(".open-icon");
+    if(menuhHolder.classList.contains("active-block") && openMenu.classList.contains("d-none"))
+    {
+        menuhHolder.classList.remove("active-block");
+        menuhHolder.classList.add("d-none");
+        openMenu.classList.remove("d-none");
+        openMenu.classList.add("active");
+        document.querySelector(".close-icon").classList.add("d-none");
+        
+    }
+});
 
