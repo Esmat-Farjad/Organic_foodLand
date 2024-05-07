@@ -35,6 +35,27 @@ a:hover {
   color: teal;
 }
 
+button[type=button] {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: rgb(206, 206, 206);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button[type=button]:focus {
+  background-color: teal;
+  color: white;
+}
+
+button[type=button]:hover {
+  background-color: teal;
+  color: white;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+
 .page-button {
   color: teal;
   font-weight: 600;
@@ -189,27 +210,36 @@ a:hover {
   font-size: 15px;
 }
 
-.description-section {
-  background-color: white;
-  border-radius: 5px;
-  box-shadow: 0 0 8px rgb(196, 194, 194);
-  padding: 2rem;
-  margin-bottom: 1rem;
+.card-section {
+  position: relative;
 }
-.description-section h1 {
+
+.card-section .content-badge {
+  position: absolute;
+  left: 0%;
+  top: -10%;
+  z-index: 100;
+  background-color: transparent;
+}
+.card-section .content-badge p {
+  background-color: transparent;
+  font-weight: bold;
+}
+
+.section-holder h1 {
   background-color: white;
   display: flex;
   justify-content: center;
   color: teal;
   margin-bottom: 0;
 }
-.description-section span {
+.section-holder span {
   display: flex;
   justify-content: center;
   font-weight: bold;
   background-color: white;
 }
-.description-section .contact {
+.section-holder .contact {
   background-color: white;
   width: 18rem;
   height: auto;
@@ -218,14 +248,14 @@ a:hover {
   padding-top: 2rem;
   padding-bottom: 3rem;
 }
-.description-section .contact-info {
+.section-holder .contact-info {
   background-color: white;
   margin: 2rem 0;
 }
-.description-section .contact .title {
+.section-holder .contact .title {
   font-weight: bold;
 }
-.description-section .contact .subtitle {
+.section-holder .contact .subtitle {
   font-weight: lighter;
 }
 
@@ -243,7 +273,6 @@ a:hover {
   position: relative;
   border: 1px solid rgb(197, 197, 197);
   border-radius: 5px 5px 0 0;
-  box-shadow: 0 0 10px rgb(204, 204, 204);
   margin: 1rem;
   overflow: hidden;
   background-color: white;
@@ -298,7 +327,7 @@ a:hover {
   padding: 5px;
   border: 1px solid #d4d4d4;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgb(204, 204, 204);
+  margin: 1rem 0;
 }
 
 .location-holder {
@@ -590,4 +619,34 @@ textarea:focus {
   to {
     width: 100%;
   }
+}
+.section-holder {
+  background-color: white;
+  border: 1px solid rgb(223, 223, 223);
+  border-radius: 5px;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  align-content: center;
+  margin: 1rem 0;
+}
+.section-holder .heading-section {
+  background-color: white;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+}
+
+.heading-section > * {
+  background-color: white;
+}
+
+.section-holder .item-holder {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  padding: 1rem;
+}
+.section-holder .item-holder button {
+  margin: 0 0.125rem;
 }/*# sourceMappingURL=style.css.map */
