@@ -47,6 +47,22 @@ a:hover{
     padding: 8px 16px;
     cursor: pointer;
 }
+@mixin button-hover{
+    font-weight: bold;
+    transition: all 0.5s;
+    background-color: teal;
+    color: white;
+}
+.btn-holder{
+    text-align: center;
+}
+.btn{
+    @include button();
+    margin: 2rem 0rem;
+}
+.btn:hover{
+    @include button-hover();
+}
 @mixin simple-button{
     border: none;
     border-radius: 5px;
@@ -71,12 +87,7 @@ button[type="button"]:focus{
 button[type="button"]:hover{
     @include simple-button-hover();
 }
-@mixin button-hover{
-    font-weight: bold;
-    transition: all 0.5s;
-    background-color: teal;
-    color: white;
-}
+
 .page-button{
 @include button();
 }
@@ -628,4 +639,48 @@ textarea:focus{
     button{
         margin: 0 0.125rem;
     }
+}
+// SING IN STYLING...
+.sign-in-holder{
+    width: 38%;
+    height: auto;
+    margin: 5rem auto;
+    background-color: white;
+    border: 1px solid rgb(233, 233, 233);
+    border-radius: 5px;
+    padding: 10px;
+}
+.sign-in-holder .sign-in-heading{
+    color: teal;
+    text-align: center;
+    background-color: white;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    h1{
+        background-color: white;
+        padding: 0px;
+        margin: 0px;
+    }
+    small{
+        font-size: medium;
+        font-weight: 500;
+        color: rgb(50, 57, 82);
+        background-color: inherit;
+    }
+}
+.form-container{
+    margin: 2rem 7rem;
+}
+.form-container .form-design{
+    width: 100%;
+    margin: auto;
+    height: auto;
+    label{
+        display: block;
+        margin-top: 1rem;
+    }
+    input{
+        width: 100%;
+    }
+    
 }
