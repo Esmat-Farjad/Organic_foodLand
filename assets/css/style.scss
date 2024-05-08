@@ -675,12 +675,26 @@ textarea:focus{
     width: 100%;
     margin: auto;
     height: auto;
+    position: relative;
     label{
         display: block;
         margin-top: 1rem;
     }
     input{
         width: 100%;
+    }
+    .eye-icon{
+        position: absolute;
+        bottom: 46%;
+        right: 0;
+        left: 100%;
+        color: rgb(165, 165, 165);
+        font-size: small;
+        cursor: pointer;
+    }
+    .eye-icon:hover{
+        color: teal;
+        transition: all 0.3s ease-in-out;
     }
     
 }

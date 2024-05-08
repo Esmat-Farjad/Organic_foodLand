@@ -709,6 +709,7 @@ textarea:focus {
   width: 100%;
   margin: auto;
   height: auto;
+  position: relative;
 }
 .form-container .form-design label {
   display: block;
@@ -716,4 +717,17 @@ textarea:focus {
 }
 .form-container .form-design input {
   width: 100%;
+}
+.form-container .form-design .eye-icon {
+  position: absolute;
+  bottom: 46%;
+  right: 0;
+  left: 100%;
+  color: rgb(165, 165, 165);
+  font-size: small;
+  cursor: pointer;
+}
+.form-container .form-design .eye-icon:hover {
+  color: teal;
+  transition: all 0.3s ease-in-out;
 }/*# sourceMappingURL=style.css.map */

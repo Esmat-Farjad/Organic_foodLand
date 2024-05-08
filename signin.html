@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
         
@@ -40,6 +42,9 @@
                     <div class="btn-holder holder">
                         <button type="submit" class="btn">Sign In</button>
                     </div>
+                    <span class="eye-icon">
+                        <i class="fa-solid fa-eye"></i>
+                    </span>
                 </form>
             </div>
             
@@ -49,5 +54,11 @@
         </div>
     </div>
 </body>
-<script src="assets/js/scripts.js"></script>
+<script>
+    document.querySelector(".eye-icon").addEventListener("click", function(){
+    document.getElementById("eye-swap").innerHTML = "";
+    document.getElementById("eye-swap").outerHTML = '<i class="fa-solid fa-eye-slash"></i>';
+});
+
+</script>
 </html>
