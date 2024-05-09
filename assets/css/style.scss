@@ -24,8 +24,12 @@ body{
 }
 
 a{
+    background-color: white;
     text-decoration: none;
-    color: gray;
+    color: rgb(80, 79, 79);
+}
+.bg-white{
+    background-color: white;
 }
 a:hover{
     color: teal;
@@ -661,13 +665,14 @@ textarea:focus{
     }
     // sign in styling
     .sign-in-holder{
-        width: 58%;
+        width: 38%;
         height: auto;
         margin: 5rem auto;
         background-color: white;
         border: 1px solid rgb(233, 233, 233);
         border-radius: 5px;
         padding: 10px;
+        
     }
 }
 // @media only screen and (min-width:$xl) {

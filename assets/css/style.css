@@ -20,8 +20,13 @@ body {
 }
 
 a {
+  background-color: white;
   text-decoration: none;
-  color: gray;
+  color: rgb(80, 79, 79);
+}
+
+.bg-white {
+  background-color: white;
 }
 
 a:hover {
@@ -685,7 +690,7 @@ textarea:focus {
          column-count: 3;
   }
   .sign-in-holder {
-    width: 58%;
+    width: 38%;
     height: auto;
     margin: 5rem auto;
     background-color: white;
