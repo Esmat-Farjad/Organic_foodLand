@@ -15,7 +15,7 @@
 <body>
     <div class="navbar" id="home">
         <div class="logo-holder">
-            <span class="brand-logo">BlogLand</span>
+            <span class="brand-logo" id="#home">BlogLand</span>
             <span class="icon-holder">
                 <span class="close-icon"><i class="fa-solid fa-xmark"></i></span>
                 <span class="open-icon"><i class="fa-solid fa-bars"></i></span>
@@ -24,7 +24,12 @@
         <ul class="nav-items">
             <li class="nav-link">Home</li>
             <li class="nav-link">Blogs</li>
-            <li class="nav-link">Account</li>
+            <li class="nav-link" id="account">Account&nbsp;<i id="chevron" class="fa-solid fa-chevron-down"></i></li>
+            <ul class="sub-menu" id="sub-menu">
+                <li><a href="#">Profile</a></li>
+                <li><a href="signin.html">Sign In</a></li>
+                <li><a href="#">Sign Out</a></li>
+            </ul>
         </ul>
     </div>
     <div class="container">
@@ -47,27 +52,8 @@
                     </span>
                 </form>
             </div>
-            
-            
-            
-
         </div>
     </div>
 </body>
-<script>
-    document.querySelector(".eye-icon").addEventListener("click", function(){
-    let icon = document.querySelector("#show-hide");
-    let pass_input = document.querySelector("#password");
-    if(pass_input.type === "password"){
-        pass_input.type = "text";
-        icon.classList.remove("fa-eye");
-        icon.classList.add("fa-eye-slash");
-    }else {
-        pass_input.type = "password";
-        icon.classList.remove("fa-eye-slash");
-        icon.classList.add("fa-eye");
-    }
-});
-
-</script>
+<script src="./assets/js/scripts.js"></script>
 </html>
