@@ -1,9 +1,12 @@
 // self executing function
 (function() {
-    document.querySelector(".heading-content").classList.add("apply-animation-left");
-  document.querySelector(".nav-items").classList.add("d-none");
-  document.querySelector(".close-icon").classList.add("d-none");
-
+    try{
+        document.querySelector(".heading-content").classList.add("apply-animation-left");
+        document.querySelector(".nav-items").classList.add("d-none");
+        document.querySelector(".close-icon").classList.add("d-none");
+    } catch(error){
+        console.log("some element dose not fount");
+    }
 })();
 window.addEventListener('scroll', function(event) {
     let location = document.querySelector(".location");
@@ -35,6 +38,7 @@ const openMenu = document.querySelector(".open-icon").addEventListener("click", 
 const closeMenu = document.querySelector(".close-icon").addEventListener("click", function(){
     let menuhHolder = document.querySelector(".nav-items");
     let openMenu = document.querySelector(".open-icon");
+    
     if(menuhHolder.classList.contains("active-block") && openMenu.classList.contains("d-none"))
     {
         menuhHolder.classList.remove("active-block");
@@ -45,4 +49,30 @@ const closeMenu = document.querySelector(".close-icon").addEventListener("click"
         
     }
 });
+document.querySelector("#account").addEventListener("click", function(){
+    let chevron_icon = document.querySelector("#chevron");
+    if(chevron_icon.classList.contains("fa-chevron-down")){
+        chevron_icon.classList.remove("fa-chevron-down");
+        chevron_icon.classList.add("fa-chevron-up");
+        document.getElementById("sub-menu").style.display = "inline-block";
+    } else{
+        chevron_icon.classList.remove("fa-chevron-up");
+        chevron_icon.classList.add("fa-chevron-down");
+        document.getElementById("sub-menu").style.display = "none";
 
+    }
+});
+// sign in 
+document.querySelector(".eye-icon").addEventListener("click", function(){
+    let icon = document.querySelector("#show-hide");
+    let pass_input = document.querySelector("#password");
+    if(pass_input.type === "password"){
+        pass_input.type = "text";
+        icon.classList.remove("fa-eye");
+        icon.classList.add("fa-eye-slash");
+    }else {
+        pass_input.type = "password";
+        icon.classList.remove("fa-eye-slash");
+        icon.classList.add("fa-eye");
+    }
+});
