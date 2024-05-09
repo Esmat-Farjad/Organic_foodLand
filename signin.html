@@ -43,7 +43,7 @@
                         <button type="submit" class="btn">Sign In</button>
                     </div>
                     <span class="eye-icon">
-                        <i class="fa-solid fa-eye"></i>
+                        <i id="show-hide" class="fa-solid fa-eye"></i>
                     </span>
                 </form>
             </div>
@@ -56,8 +56,17 @@
 </body>
 <script>
     document.querySelector(".eye-icon").addEventListener("click", function(){
-    document.getElementById("eye-swap").innerHTML = "";
-    document.getElementById("eye-swap").outerHTML = '<i class="fa-solid fa-eye-slash"></i>';
+    let icon = document.querySelector("#show-hide");
+    let pass_input = document.querySelector("#password");
+    if(pass_input.type === "password"){
+        pass_input.type = "text";
+        icon.classList.remove("fa-eye");
+        icon.classList.add("fa-eye-slash");
+    }else {
+        pass_input.type = "password";
+        icon.classList.remove("fa-eye-slash");
+        icon.classList.add("fa-eye");
+    }
 });
 
 </script>

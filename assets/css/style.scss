@@ -89,7 +89,7 @@ button[type="button"]:hover{
 }
 
 .page-button{
-@include button();
+@include button;
 }
 .page-button:hover{
 @include button-hover();
