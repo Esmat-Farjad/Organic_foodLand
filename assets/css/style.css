@@ -438,11 +438,11 @@ textarea:focus {
     padding: 0.8rem;
     color: teal;
   }
-  .navbar .logo-holder .brand-logo {
-    font-size: 26px;
-    font-weight: bold;
+  .navbar .logo-holder .brand-logo a img {
+    width: auto;
+    height: 3rem;
   }
-  .navbar .nav-items {
+  .navbar .nav-item6 {
     list-style: none;
     border: 1px solid rgb(207, 207, 207);
     padding: 0.8rem 0.5rem;
@@ -501,7 +501,7 @@ textarea:focus {
     font-weight: bold;
   }
   .navbar .nav-items {
-    list-style: none;
+    list-style-type: none;
     border: 1px solid rgb(207, 207, 207);
     padding: 0.8rem 0.5rem;
   }
@@ -560,7 +560,6 @@ textarea:focus {
   }
   .navbar .nav-items {
     list-style: none;
-    border: 1px solid rgb(207, 207, 207);
     padding: 0.8rem 0.5rem;
   }
   .navbar .nav-items .nav-link {
@@ -606,18 +605,20 @@ textarea:focus {
 }
 @media only screen and (min-width: 1024px) {
   .navbar {
-    margin: 0 15rem;
+    margin: 0rem 15rem;
+    vertical-align: baseline;
+    padding: 0px;
   }
   .navbar .logo-holder {
     display: inline-block;
-    font-size: 26px;
-    font-weight: bold;
-    color: teal;
-    padding: 1.5rem 0;
   }
   .navbar .nav-items {
-    border: none;
     position: relative;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    vertical-align: baseline;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
   .navbar .nav-items, .nav-link {
     display: inline-block;
@@ -625,6 +626,11 @@ textarea:focus {
   .nav-items .nav-link {
     margin: 0 2rem;
     cursor: pointer;
+  }
+  .navbar .logo-holder .brand-logo a img {
+    width: auto;
+    height: 3rem;
+    vertical-align: middle;
   }
   .navbar .logo-holder .icon-holder {
     display: none;
