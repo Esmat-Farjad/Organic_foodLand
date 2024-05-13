@@ -76,3 +76,7 @@ document.querySelector(".eye-icon").addEventListener("click", function(){
         icon.classList.add("fa-eye");
     }
 });
+console.log("hello man hwo");
+document.querySelector("#confirm-password").addEventListener("keyup", function(){
+    console.log("keyup event");
+});
