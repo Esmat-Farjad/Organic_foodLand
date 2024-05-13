@@ -874,3 +874,17 @@ textarea:focus{
     }
     
 }
+progress{
+    height: 15px;
+    border-radius: 8px;
+    border: 1px solid #ebebeb;
+}
+.red-progress::-webkit-progress-value{
+    background: red;
+}
+.yellow-progress::-webkit-progress-value{
+    background: rgb(255, 230, 0);
+}
+.green-progress::-webkit-progress-value{
+    background: green;
+}

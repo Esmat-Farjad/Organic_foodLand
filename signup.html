@@ -45,14 +45,14 @@
                     <input type="email" id="email">
                     <label for="password">Password</label>
                     <input type="password" id="password">
+                    <progress id="confirmation" value="0" max="100"></progress>
+                    <span style="color: green; margin-top: 20px;" id="check"></span>
                     <label for="password">confirm password</label>
                     <input type="password" id="confirm-password">
+                    
                     <div class="btn-holder holder">
                         <button type="submit" class="btn">Sign Up</button>
                     </div>
-                    <span class="eye-icon">
-                        <i id="show-hide" class="fa-solid fa-eye"></i>
-                    </span>
                 </form>
                 <div class="bg-white">
                     Already have account <a href="signin.html">Sign In</a>
@@ -62,4 +62,53 @@
     </div>
 </body>
 <script src="./assets/js/scripts.js"></script>
+<script>
+let pwd = "";
+let lowerCase = /[a-z]/g;
+let upperCase = /[A-Z]/g;
+let numberCase = /[0-9]/g;
+let SpecialCase = /[!_.-]/;
+let l_flag = 0;
+let U_flag = 0;
+let N_flag = 0;
+let S_flag = 0;
+
+document.querySelector("#password").addEventListener("keyup", function(e){
+    pwd += e.target.value;
+    let letter = e.target.value;
+    if(pwd.length < 8 ){
+        document.getElementById("confirmation").value = (pwd.length )* 4;
+        document.querySelector("#confirmation").classList.add("red-progress");
+    } else if(pwd.length >= 8){
+        document.getElementById("confirmation").value = 33;
+        document.querySelector("#confirmation").classList.add("yellow-progress");
+    }
+    if( letter.match(lowerCase)){
+        l_flag = 1;
+    } 
+    if(letter.match(upperCase)){
+        U_flag = 1;
+    } 
+    if(letter.match(numberCase)){
+        N_flag = 1;
+    } 
+    if(letter.match(SpecialCase)){
+        S_flag = 1;
+    }
+
+    console.log("lowerCase: " + l_flag);
+    console.log("upperCase: "+ U_flag);
+    console.log("NumberCase: "+ N_flag);
+    console.log("SpecialCase: "+ S_flag);
+    if(l_flag != 0 && U_flag != 0 && N_flag != 0)
+    {
+        setTimeout(()=>{
+            document.getElementById("confirmation").value = 100;
+        });
+        
+        document.querySelector("#confirmation").classList.add("green-progress");
+        document.getElementById("check").innerHTML='<i class="fa-solid fa-circle-check"></i>';
+    }
+});
+</script>
 </html>
