@@ -11,15 +11,16 @@
 @media only screen and (min-width:$lg) {
     .two-column-grid{
         display: grid;
-        grid-template-columns: auto auto auto auto auto;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
         grid-gap: 5px;
     }
     .aside-col{
         border: 1px solid #F7F6F3;
         background-color: white;
-        padding: 5px;
+        padding: 0px;
         grid-column: 1 ;
         border-radius: 5px;
+        overflow: hidden;
     }
     .section-col{
         border: 1px solid #F7F6F3;
@@ -28,5 +29,26 @@
         padding: 5px;
         border-radius: 5px;
     }
-    
+}
+.heading-section h3{
+    text-align: center;
+}
+.menu-item{
+    background-color: white;
+    ul{
+        padding: 0px;
+        list-style-type: none;
+        background-color: white;
+    }
+    li{
+        padding: 1rem;
+        background-color: white;
+        cursor: pointer;
+    }
+    li:hover{
+        background-color: #F7F6F3;
+        font-weight: 700;
+        color: teal;
+        transition: all 0.3s ease-in-out;
+    }
 }
