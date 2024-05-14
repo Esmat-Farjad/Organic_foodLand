@@ -1,0 +1,30 @@
+.main-section {
+  padding: 1rem;
+}
+
+@media only screen and (min-width: 640px) {
+  .two-column-grid {
+    display: block;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .two-column-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 5px;
+  }
+  .aside-col {
+    border: 1px solid #F7F6F3;
+    background-color: white;
+    padding: 5px;
+    grid-column: 1;
+    border-radius: 5px;
+  }
+  .section-col {
+    border: 1px solid #F7F6F3;
+    grid-column: 2/span 4;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+  }
+}/*# sourceMappingURL=vendor.css.map */
