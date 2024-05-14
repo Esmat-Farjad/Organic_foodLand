@@ -6,6 +6,9 @@
   .two-column-grid {
     display: block;
   }
+  .aside-col {
+    background-color: white;
+  }
 }
 @media only screen and (min-width: 1024px) {
   .two-column-grid {
