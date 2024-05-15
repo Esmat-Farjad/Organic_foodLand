@@ -68,11 +68,11 @@
   color: teal;
   text-align: center;
 }
-.main-section .content-holder {
+.main-section .statistics {
   display: flex;
   flex-wrap: nowrap;
 }
-.main-section .content-holder canvas {
+.main-section .statistics canvas {
   width: 100%;
   max-width: 600px;
   border: 1px solid #F7F6F3;

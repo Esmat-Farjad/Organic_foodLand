@@ -54,3 +54,14 @@ new Chart("line-chart", {
     }
   }
 });
+const listItem = document.querySelectorAll("li");
+listItem.forEach(element => {
+    element.addEventListener("click", function(e){
+        for(let i = 0; i < listItem.length; i++){
+            if(listItem[i].classList.contains("menu-active")){
+                listItem[i].classList.remove("menu-active");
+            }
+        }
+        element.classList.add("menu-active");
+    });
+});
