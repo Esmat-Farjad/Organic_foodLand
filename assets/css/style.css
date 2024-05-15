@@ -608,7 +608,7 @@ textarea:focus {
     padding: 10px;
   }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1080px) {
   .navbar {
     margin: 0rem 15rem;
     vertical-align: baseline;
