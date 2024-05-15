@@ -38,16 +38,16 @@
             <div class="heading-text">
                 <h3>Menu</h3>
             </div>
-            <ul>
-                <li class="menu-active statistic">statistics</li>
-                <li class="product">product</li>
-                <li class="purchase">purchase</li>
-                <li class="sale">sale</li>
-                <li class="order">orders</li>
-                <li class="add-product">add product</li>
-                <li class="manage-product">manage product</li>
-                <li class="stock">stock</li>
-            </ul>
+            <div class="menu-items">
+                <a class="nav-link menu-active" href="#product">statistics</a>
+                <a class="nav-link" href="#product">product</a>
+                <a class="nav-link" href="#purchase">purchase</a>
+                <a class="nav-link" href="#sale">sale</a>
+                <a class="nav-link" href="#order">order</a>
+                <a class="nav-link" href="#add-product">add product</a>
+                <a class="nav-link" href="#manage-product">manage product</a>
+                <a class="nav-link" href="#stock">stock</a>
+            </div>
             <span class="close-button" onclick="closeSideNav()">
                 <i class="fa-solid fa-xmark"></i>
             </span>
@@ -57,18 +57,121 @@
             <div onclick="openSideNav()" class="menu-button-holder">
                 <i class="fa-solid fa-list-ul"></i>&nbsp;Menu
             </div>
-            <div class="header-text">
-                <h3 id="dynamic-header-content"></h3>
+            <div class="content-manager" id="statistics">
+                <div class="header-text">
+                    <h3 id="dynamic-header-content">System Statistics</h3>
+                    <h6 id="sub-text">the data is calculated by the system for this period</h6>
+                </div>
+                <div class="details-content">
+                    <div class="statistic-information">
+                        <p>Nulla vel leo aliquet, eleifend quam eget, tempus ligula.
+                        Maecenas consectetur augue non augue aliquet malesuada.
+                        Nunc quis neque sed metus sagittis elementum eu sed dolor.
+                        Proin hendrerit augue sit amet ipsum laoreet, quis tincidunt tortor ullamcorper.
+                        </p>
+                        <p>
+                            Sed placerat nisi id elit eleifend, vel egestas felis placerat.
+                            Proin cursus ligula id justo cursus, aliquet tincidunt risus varius.
+                            Vestibulum fringilla ante in tempor aliquam.
+                            Ut eu elit pulvinar, commodo augue id, suscipit sapien.
+                        </p>
+                    </div>
+                    <div class="two-column-grid">
+                        <div class="column">
+                            <canvas id="pie-chart"></canvas>
+                        </div>
+                        
+                        <div class="column">
+                            <canvas id="line-chart"></canvas>
+                        </div>
+                        
+                    </div>
+                </div>
             </div>
-            <div class="statistics" id="content-manager">
-                <canvas id="pie-chart">
-                </canvas>
-                <canvas id="line-chart">
-                </canvas>
+            <div class="content-manager" id="product">
+                <div class="header-text">
+                    <h3 id="dynamic-header-content">Product Manager</h3>
+                    <h6 id="sub-text">the data is calculated by the system for this period</h6>
+                </div>
+                <div class="details-content">
+                    <div class="card-section">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="../assets/images/food.avif" alt="Image Placeholder">
+                            </div>
+                            <div class="card-footer">
+                                <span class="title">Mix Fruite</span>
+                                <span class="sub-title">RECIPE BY ESMATULLAH</span>
+                                <span class="description">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate </span>
+                            </div>
+                            <span class="badge">
+                                34 min
+                            </span>
+                        </div>
+                        <div class="card" id="card">
+                            <div class="card-body">
+                                <img src="../assets/images/food.avif" alt="Image Placeholder">
+                            </div>
+                            <div class="card-footer">
+                                <span class="title">Mix Fruite</span>
+                                <span class="sub-title">Recipe By: Esmatullah</span>
+                                <span class="description">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate </span>
+                            </div>
+                            <span class="badge">
+                                34 min
+                            </span>
+                        </div>
+                        <div class="card" id="card">
+                            <div class="card-body">
+                                <img src="../assets/images/food.avif" alt="Image Placeholder">
+                            </div>
+                            <div class="card-footer">
+                                <span class="title">Mix Fruite</span>
+                                <span class="sub-title">Recipe By: Esmatullah</span>
+                                <span class="description">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate </span>
+                            </div>
+                            <span class="badge">
+                                34 min
+                            </span>
+                        </div>
+                        <div class="card" id="card">
+                            <div class="card-body">
+                                <img src="../assets/images/food.avif" alt="Image Placeholder">
+                            </div>
+                            <div class="card-footer">
+                                <span class="title">Mix Fruite</span>
+                                <span class="sub-title">Recipe By: Esmatullah</span>
+                                <span class="description">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate </span>
+                            </div>
+                            <span class="badge">
+                                34 min
+                            </span> 
+                        </div>
+                        
+                    </div> 
+                </div>
             </div>
-            <div class="product-content">
+            <div class="content-manager" id="purchase">
+                <div class="header-text">
+                    <h3 id="dynamic-header-content">Purchase Manager</h3>
+                    <h6 id="sub-text">the data is calculated by the system for this period</h6>
+                </div>
+                <div class="details-content">
+                    purchase management content 
+                </div>
+            </div>
 
+            <div class="content-manager" id="sale">
+                <div class="header-text">
+                    <h3 id="dynamic-header-content">Sale Manager</h3>
+                    <h6 id="sub-text">the data is calculated by the system for this period</h6>
+                </div>
+                <div class="details-content">
+                    Sale management content 
+                </div>
             </div>
+            
+            
         </div>
     </div>
 </body>
