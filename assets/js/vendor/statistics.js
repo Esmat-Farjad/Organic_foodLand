@@ -54,7 +54,7 @@ new Chart("line-chart", {
     }
   }
 });
-const listItem = document.querySelectorAll("li");
+const listItem = document.querySelectorAll(".nav-link");
 listItem.forEach(element => {
     element.addEventListener("click", function(e){
         for(let i = 0; i < listItem.length; i++){
@@ -63,7 +63,5 @@ listItem.forEach(element => {
             }
         }
         element.classList.add("menu-active");
-        document.getElementById("content-manager").innerHTML = '';
-        document.getElementById("dynamic-header-content").innerHTML = element.textContent;
     });
 });
