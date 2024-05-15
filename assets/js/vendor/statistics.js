@@ -47,6 +47,10 @@ new Chart("line-chart", {
     }]
   },
   options: {
-    legend: {display: false}
+    legend: {display: false},
+    title:{
+        display:true,
+        text:"Order income number of customer visit"
+    }
   }
 });
