@@ -110,4 +110,8 @@
   background-image: linear-gradient(to right, teal, white);
   color: white;
   font-weight: 600;
+}
+
+.display-none {
+  display: none;
 }/*# sourceMappingURL=vendor.css.map */

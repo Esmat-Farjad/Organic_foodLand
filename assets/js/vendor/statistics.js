@@ -63,5 +63,7 @@ listItem.forEach(element => {
             }
         }
         element.classList.add("menu-active");
+        document.getElementById("content-manager").innerHTML = '';
+        document.getElementById("dynamic-header-content").innerHTML = element.textContent;
     });
 });
