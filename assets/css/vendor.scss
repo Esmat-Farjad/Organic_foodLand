@@ -11,21 +11,19 @@
     left: 0;
     overflow-x: hidden;
     transition: 0.5s;
-    ul{
-        list-style-type: none;
+    .menu-items{
+        margin:1rem;
         background-color: inherit;
-        padding: 1.5rem;
     }
-    li{
-        padding: 10px 5px;
+    .menu-items a{
+        display: block;
         background-color: inherit;
-        cursor: pointer;
+        padding: 0.8rem;
     }
-    li:hover{
+    .menu-items a:hover{
         background-image: linear-gradient(to right, teal,white);
         color: white;
         font-weight: 600;
-        transition: all 0.3s ease;
     }
     .close-button{
         position: absolute;
@@ -61,29 +59,28 @@
     .menu-button-holder:hover{
         font-weight: 500;
         transition: 0.3s;
-    }
-    .header-text{
-        color: teal;
-        text-align: center;
-        
-    }
-    .statistics{
-        display: flex;
-        flex-wrap: nowrap;
-    }
-    .statistics canvas{
-        width: 100%;
-        max-width: 600px;
-        border: 1px solid #F7F6F3;
-        background-color: white;
-        border-radius: 5px;
-        padding: 1rem;
-        margin: 1rem;
-        
-    }
-
+    }     
+    .content-manager{
+        height: 100%;
+        max-height: 100vh;
+        width: auto;
+        .header-text{
+            text-align: center;
+            color: teal;
+            margin: 2rem 0rem;
+            h6,h3{
+                padding: 0px;
+                margin: 0px;
+            }
+        }
+    }   
 }
-
+canvas{
+    background-color: white;
+    border: 1px solid #F7F6F3;
+    border-radius: 5px;
+    margin: 1rem;
+}
 // mobile device
 @media only screen and (min-width:$sm) { 
     .main-section .side-nav{
@@ -104,6 +101,10 @@
         width: 0%;
         height: 100%;
     }
+    .content-manager .details-content .two-column-grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 50%);
+    }
 }
 // computer device 
 @media only screen and (min-width:$xl) {
@@ -111,6 +112,14 @@
         width: 0%;
         height: 100%;
     }
+    .content-manager .details-content .two-column-grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 50%);
+        
+    }
+}
+.details-content .statistic-information{
+    padding: 0.5rem 1rem;
 }
 .menu-active{
     background-image: linear-gradient(to right, teal,white);
