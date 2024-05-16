@@ -57,8 +57,7 @@
             <div onclick="openSideNav()" class="menu-button-holder">
                 <i class="fa-solid fa-list-ul"></i>&nbsp;Menu
             </div>
-            <div onclick="openMobileNav()" class="mobile-menu-handler">
-                Menu
+            <div onclick="openMobileNav(event)" class="mobile-menu-handler">
             </div>
             <div class="content-manager" id="statistics">
                 <div class="header-text">
@@ -156,9 +155,21 @@
         document.getElementById("side-nav").style.width = '0';
         document.getElementById("main-section").style.marginLeft = '0';
     }
-    function openMobileNav(){
-        document.querySelector("#side-nav").classList.toggle('display-none');
+    const sideNav = document.querySelector(".side-nav");
+    if(sideNav.classList.contains("display-none")) {
+        document.querySelector(".mobile-menu-handler").textContent = "Open Menu";
+    } else if(!sideNav.classList.contains("display-none")){
+        document.querySelector(".mobile-menu-handler").textContent= "Close Menu";
     }
+    function openMobileNav(event){
+        sideNav.classList.toggle('display-none');
+        if(sideNav.classList.contains("display-none")) {
+            event.currentTarget.textContent = "Open Menu";
+        } else {
+            event.currentTarget.textContent= "Close Menu";
+        }
+    }
+
     
     
 
