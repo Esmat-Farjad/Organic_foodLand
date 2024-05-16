@@ -129,3 +129,33 @@ canvas{
 .display-none{
     display: none;
 }
+
+.table-hover{
+    background-color: white;
+    border-collapse: collapse;
+    border: 1px solid #F7F6F3;
+    border-radius: 5px;
+    padding: 10px;
+    thead{
+        background-color: white;
+        
+        th{
+            background-color: white;
+            padding: 1rem;
+        }
+    }
+    tbody{
+        background-color: white;
+        tr td{
+            background-color: white;
+            padding: 1rem;
+            cursor: pointer;
+        }
+        tr:hover td{
+            background-color: teal;
+            color: white;
+            transition: all 0.5s ease;
+        }
+    }
+    
+}
