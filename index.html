@@ -28,7 +28,7 @@
                 <li><a href="#">Profile</a></li>
                 <li><a href="vendor/dashboard.html">Vendor</a></li>
                 <li><a href="signin.html">Sign In</a></li>
-                <li><a href="#">Sign Out</a></li>
+                <li><a href="#" onclick="OpenAlert()">Sign Out</a></li>
             </ul>
         </ul>
     </div>
@@ -167,18 +167,8 @@
                         <input type="email" id="email">
                         <label for="message">Message</label>
                     </div>
-                    <div class="holder">
-                        <textarea name="message" id="message" cols="10" rows="5"></textarea>
-                    </div>
-                    <div class="button-holder holder">
-                        <button type="submit">Send</button>
-                    </div>
-                </form>
-                
-            </div>
-        </div>
-    </div>
-    <div class="footer">
+      
+                </script>
         <div class="footer-content">
             <div class="footer-link">
                 <a href="#home"><i class="fa-solid fa-house icon-design"></i>&nbsp;Home</a>
@@ -199,6 +189,41 @@
             <span class="center-element">&COPY; 2024&nbsp;<span class="text-teal">BlogLand</span>. All Right Reserved.</span>
         </div>
     </div>
+    <div class="js-popup d-none">
+        <div class="header-text">
+            <h2>Alert !</h2>
+        </div>
+        <div class="body-text">
+            <p class="description-text">
+                This will smoothly transition the opacity and visibility properties
+                 over a duration of 0.5 seconds when the classes are added or removed.
+            </p>
+            <p class="option-button">
+                <button type="button">yes</button>
+                <button type="button" onclick="closeAlert()">concel</button>
+            </p>
+        </div>
+    </div>
 </body>
 <script src="./assets/js/scripts.js"></script>
+<script>
+    function closeAlert(){
+        let alert_box = document.querySelector(".js-popup");
+        if(!alert_box.classList.contains("d-none")){
+            alert_box.classList.remove("zoom-out-animation");
+            alert_box.classList.add("zoom-in-animation");
+            setTimeout(() => {
+                alert_box.classList.add("d-none");
+            }, 345); 
+        }  
+    }
+    function OpenAlert(){
+        let alert_box = document.querySelector(".js-popup");
+        if(alert_box.classList.contains("d-none")){
+            alert_box.classList.remove("d-none");
+            alert_box.classList.add("zoom-out-animation"); 
+        }
+    }
+      
+</script>
 </html>
