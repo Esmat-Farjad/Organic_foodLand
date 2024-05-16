@@ -57,6 +57,9 @@
             <div onclick="openSideNav()" class="menu-button-holder">
                 <i class="fa-solid fa-list-ul"></i>&nbsp;Menu
             </div>
+            <div onclick="openMobileNav()" class="mobile-menu-handler">
+                Menu
+            </div>
             <div class="content-manager" id="statistics">
                 <div class="header-text">
                     <h3 id="dynamic-header-content">System Statistics</h3>
@@ -153,6 +156,11 @@
         document.getElementById("side-nav").style.width = '0';
         document.getElementById("main-section").style.marginLeft = '0';
     }
+    function openMobileNav(){
+        document.querySelector("#side-nav").classList.toggle('display-none');
+    }
+    
+    
 
 </script>
 </html>
