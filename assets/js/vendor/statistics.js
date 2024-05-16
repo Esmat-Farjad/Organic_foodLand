@@ -54,7 +54,7 @@ new Chart("line-chart", {
     }
   }
 });
-const listItem = document.querySelectorAll(".nav-link");
+const listItem = document.querySelectorAll(".menu-link");
 listItem.forEach(element => {
     element.addEventListener("click", function(e){
         for(let i = 0; i < listItem.length; i++){

@@ -39,14 +39,14 @@
                 <h3>Menu</h3>
             </div>
             <div class="menu-items">
-                <a class="nav-link menu-active" href="#product">statistics</a>
-                <a class="nav-link" href="#product">product</a>
-                <a class="nav-link" href="#purchase">purchase</a>
-                <a class="nav-link" href="#sale">sale</a>
-                <a class="nav-link" href="#order">order</a>
-                <a class="nav-link" href="#add-product">add product</a>
-                <a class="nav-link" href="#manage-product">manage product</a>
-                <a class="nav-link" href="#stock">stock</a>
+                <a class="menu-link menu-active" href="#product">statistics</a>
+                <a class="menu-link" href="#product">product</a>
+                <a class="menu-link" href="#purchase">purchase</a>
+                <a class="menu-link" href="#sale">sale</a>
+                <a class="menu-link" href="#order">order</a>
+                <a class="menu-link" href="#add-product">add product</a>
+                <a class="menu-link" href="#manage-product">manage product</a>
+                <a class="menu-link" href="#stock">stock</a>
             </div>
             <span class="close-button" onclick="closeSideNav()">
                 <i class="fa-solid fa-xmark"></i>
@@ -163,6 +163,7 @@
     }
     function openMobileNav(event){
         sideNav.classList.toggle('display-none');
+        
         if(sideNav.classList.contains("display-none")) {
             event.currentTarget.textContent = "Open Menu";
         } else {
