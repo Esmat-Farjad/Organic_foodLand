@@ -6,9 +6,6 @@
   background-color: white;
   border: 1px solid #F7F6F3;
   border-radius: 5px;
-  position: fixed;
-  top: 20;
-  left: 0;
   overflow-x: hidden;
   transition: 0.5s;
 }
@@ -56,7 +53,20 @@
 .main-section .menu-button-holder {
   color: teal;
   cursor: pointer;
-  display: inline-block;
+}
+.main-section .mobile-menu-handler {
+  text-align: center;
+  padding: 1rem;
+  color: teal;
+  border: 1px solid teal;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.main-section .mobile-menu-handler:hover {
+  background-color: teal;
+  color: white;
+  transition: 0.5s;
+  font-weight: 600;
 }
 .main-section .menu-button-holder:hover {
   font-weight: 500;
@@ -88,32 +98,70 @@ canvas {
   .main-section .side-nav {
     width: 100%;
     height: 100%;
+    position: relative;
+  }
+  .main-section .side-nav .close-button {
+    display: none;
+  }
+  .main-section .menu-button-holder {
+    display: none;
+  }
+  .main-section .mobile-menu-handler {
+    display: block;
   }
 }
 @media only screen and (min-width: 768px) {
   .main-section .side-nav {
     width: 100%;
     height: 100%;
+    position: relative;
+  }
+  .main-section .side-nav .close-button {
+    display: none;
+  }
+  .main-section .menu-button-holder {
+    display: none;
+  }
+  .main-section .mobile-menu-handler {
+    display: block;
   }
 }
 @media only screen and (min-width: 1080px) {
   .main-section .side-nav {
     width: 0%;
     height: 100%;
+    position: fixed;
+    top: 20;
+    left: 0;
   }
   .content-manager .details-content .two-column-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, 50%);
+  }
+  .main-section .menu-button-holder {
+    display: inline-block;
+  }
+  .mobile-menu-handler {
+    display: none;
   }
 }
 @media only screen and (min-width: 1280px) {
   .main-section .side-nav {
     width: 0%;
     height: 100%;
+    position: fixed;
+    top: 20;
+    left: 0;
   }
   .content-manager .details-content .two-column-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, 50%);
+  }
+  .main-section .menu-button-holder {
+    display: inline-block;
+  }
+  .mobile-menu-handler {
+    display: none;
   }
 }
 .details-content .statistic-information {
