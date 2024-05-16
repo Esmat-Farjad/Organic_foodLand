@@ -861,6 +861,8 @@ body {
 
 .js-popup .body-text, .option-button {
   background-color: white;
+}
+.js-popup .body-text button, .option-button button {
   font-size: calc(0.3vw + 0.5vh);
 }
 

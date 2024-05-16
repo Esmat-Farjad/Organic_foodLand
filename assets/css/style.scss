@@ -49,6 +49,7 @@ a:hover{
     padding: 8px 16px;
     cursor: pointer;
 }
+
 @mixin button-hover{
     font-weight: bold;
     transition: all 0.5s;
@@ -911,7 +912,10 @@ body{
 }
 .js-popup .body-text, .option-button{
     background-color: white;
-    font-size: calc(0.3vw + 0.5vh);
+    
+    button{
+        font-size: calc(0.3vw + 0.5vh);
+    }
 }
 .js-popup .body-text .description-text{
     background-color: white;
