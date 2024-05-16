@@ -134,6 +134,9 @@ canvas {
     top: 20;
     left: 0;
   }
+  .main-section .side-nav .close-button {
+    display: inline-block;
+  }
   .content-manager .details-content .two-column-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, 50%);
@@ -141,7 +144,7 @@ canvas {
   .main-section .menu-button-holder {
     display: inline-block;
   }
-  .mobile-menu-handler {
+  .main-section .mobile-menu-handler {
     display: none;
   }
 }
@@ -153,6 +156,9 @@ canvas {
     top: 20;
     left: 0;
   }
+  .main-section .side-nav .close-button {
+    display: inline-block;
+  }
   .content-manager .details-content .two-column-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, 50%);
@@ -160,7 +166,7 @@ canvas {
   .main-section .menu-button-holder {
     display: inline-block;
   }
-  .mobile-menu-handler {
+  .main-section .mobile-menu-handler {
     display: none;
   }
 }
