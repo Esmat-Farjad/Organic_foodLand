@@ -91,6 +91,10 @@ canvas{
     border-radius: 5px;
     margin: 1rem;
 }
+.two-column-grid .column{
+    position: relative;
+}
+
 
 // mobile device
 @media only screen and (min-width:$sm) { 
@@ -143,6 +147,9 @@ canvas{
             display: inline-block;
         }
     }
+    .content-manager{
+        position: relative;
+    }
     .content-manager .details-content .two-column-grid{
         display: grid;
         grid-template-columns: repeat(auto-fill, 50%);
@@ -188,40 +195,40 @@ canvas{
 .display-none{
     display: none;
 }
-.table-hover{
-    background-color: white;
-    border-collapse: collapse;
+.product-section{
+    background-color: inherit;
+    margin: 2rem 1rem;
+}
+.product-section .title h2{
+    text-align: center;
+    background-color: #F7F6F3;
+    color: teal;
+}
+.product-section .grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 20%);
+    gap: 1rem;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+.product-section .grid-container .box-holder{
     border: 1px solid #F7F6F3;
     border-radius: 5px;
-    padding: 10px;
-    thead{
-        background-color: white;
-        
-        th{
-            background-color: white;
-            padding: 1rem;
-        }
-    }
-    tbody{
-        background-color: white;
-        tr td{
-            background-color: white;
-            padding: 1rem;
-            cursor: pointer;
-        }
-        tr:hover td{
-            background-color: teal;
-            color: white;
-            transition: all 0.5s ease;
-        }
-    }
-    
+    box-shadow: 0 0 5px #d3d3d3;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    max-height: 10rem;
+    text-align: center;
+    padding: 5px;
 }
-@keyframes fadeIn {
-    from {
-        transform: scale(0);
-    }
-    to {
-        transform: scale(1);
-    }
+.box-holder .food-name , .description{
+    background-color: inherit;
+}
+.box-holder img{
+    overflow: hidden;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
