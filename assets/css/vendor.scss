@@ -222,6 +222,7 @@ canvas{
     max-height: 10rem;
     overflow: hidden;
     position: relative;
+    animation: slideUp 1.5s ease-in-out;
 }
 .box-holder .food-name , .description, .food-price{
     background-color: white;
@@ -247,4 +248,14 @@ canvas{
     left: 2%;
     z-index: 100;
     box-shadow:  0 0 10px;
+    animation: zoomOut 1.5s ease-in-out 1;
+}
+@keyframes growWidth {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    
 }

@@ -174,7 +174,7 @@ button[type=button]:hover {
 }
 @keyframes slideUp {
   from {
-    transform: translateY(50px);
+    transform: translateY(250px);
     opacity: 0;
   }
   to {
