@@ -195,7 +195,7 @@ canvas {
 
 .product-section {
   background-color: inherit;
-  margin: 2rem 1rem;
+  margin: 4rem 1rem;
 }
 
 .product-section .title h2 {
@@ -256,11 +256,7 @@ canvas {
   animation: zoomOut 1.5s ease-in-out 1;
 }
 
-@keyframes growWidth {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.product-section .paginator {
+  text-align: center;
+  margin: 3rem 0rem;
 }/*# sourceMappingURL=vendor.css.map */
