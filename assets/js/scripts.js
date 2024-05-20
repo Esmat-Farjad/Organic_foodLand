@@ -7,15 +7,7 @@
     } catch(error){
         console.log("some element did not exist !");
     }
-    // asyncrounos javascript demo
-    const request = new XMLHttpRequest();
-    request.addEventListener("readystatechange", () =>{
-        console.log(request, request.readyState);
-    });
-    request.open('GET', 'https://jsonplaceholder.typicode.com/todos/');
-    request.send();
-
-
+    getData();
 })();
 window.addEventListener('scroll', function(event) {
    try{
@@ -92,4 +84,15 @@ try{
     });
 } catch(error){
     console.log("something went wrong");
+}
+document.getElementById("spinner").innerHTML = '<i class="fa-solid fa-rotate fa-spin"></i>';
+async function getData() {
+    try{
+        const data = await fetch("https://jsonplaceholder.typicode.com/todos/",{method: 'GET'});
+        const result = await data.json();
+        console.log(result);
+        document.getElementById("spinner").innerHTML = result[0].title;
+    } catch(error) {
+        console.log(error);
+    }
 }
