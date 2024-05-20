@@ -5,10 +5,20 @@
         document.querySelector(".nav-items").classList.add("d-none");
         document.querySelector(".close-icon").classList.add("d-none");
     } catch(error){
-        console.log("some element dose not fount");
+        console.log("some element did not exist !");
     }
+    // asyncrounos javascript demo
+    const request = new XMLHttpRequest();
+    request.addEventListener("readystatechange", () =>{
+        console.log(request, request.readyState);
+    });
+    request.open('GET', 'https://jsonplaceholder.typicode.com/todos/');
+    request.send();
+
+
 })();
 window.addEventListener('scroll', function(event) {
+   try{
     let location = document.querySelector(".location");
     let location_position = location.getBoundingClientRect();
     let scroll_element = this.document.querySelector(".description-section");
@@ -21,6 +31,9 @@ window.addEventListener('scroll', function(event) {
         document.querySelector("iframe").classList.add("slide-left-animation");
         document.querySelector(".contact-form").classList.add("slide-right-animation");
     }
+   }catch(error){
+    console.log("something went wrong");
+   }
 });
 const openMenu = document.querySelector(".open-icon").addEventListener("click", function(){
     let menuhHolder = document.querySelector(".nav-items");
@@ -63,16 +76,20 @@ document.querySelector("#account").addEventListener("click", function(){
     }
 });
 // sign in 
-document.querySelector(".eye-icon").addEventListener("click", function(){
-    let icon = document.querySelector("#show-hide");
-    let pass_input = document.querySelector("#password");
-    if(pass_input.type === "password"){
-        pass_input.type = "text";
-        icon.classList.remove("fa-eye");
-        icon.classList.add("fa-eye-slash");
-    }else {
-        pass_input.type = "password";
-        icon.classList.remove("fa-eye-slash");
-        icon.classList.add("fa-eye");
-    }
-});
+try{
+    document.querySelector(".eye-icon").addEventListener("click", function(){
+        let icon = document.querySelector("#show-hide");
+        let pass_input = document.querySelector("#password");
+        if(pass_input.type === "password"){
+            pass_input.type = "text";
+            icon.classList.remove("fa-eye");
+            icon.classList.add("fa-eye-slash");
+        }else {
+            pass_input.type = "password";
+            icon.classList.remove("fa-eye-slash");
+            icon.classList.add("fa-eye");
+        }
+    });
+} catch(error){
+    console.log("something went wrong");
+}
