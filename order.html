@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="navbar" id="home">
+        <div class="logo-holder">
+            <span class="brand-logo" id="#home">
+                <a href="#">
+                    <img src="./assets/images/brand.png" alt="">
+                </a>
+                </span>
+            <span class="icon-holder">
+                <span class="close-icon"><i class="fa-solid fa-xmark"></i></span>
+                <span class="open-icon"><i class="fa-solid fa-bars"></i></span>
+            </span>
+        </div>
+        <ul class="nav-items">
+            <li class="nav-link">Home</li>
+            <li class="nav-link">Blogs</li>
+            <li class="nav-link" id="account">Account&nbsp;<i id="chevron" class="fa-solid fa-chevron-down"></i></li>
+            <ul class="sub-menu" id="sub-menu">
+                <li><a href="#">Profile</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="#">Sign Out</a></li>
+            </ul>
+        </ul>
+    </div>
+    <div class="order-container">
+        <div class="row grid-view">
+            <div class="aside">asdie </div>
+            <div class="section">
+                <form action="#">
+                    <div class="label-holder">
+                        <label class="search" for="name">Name</label>
+                        <label class="number-data" for="quantity">Quantity</label>
+                        <label class="number-data" for="price">Price</label>
+                        <label class="number-data" for="total-price">Total Price</label>
+                    </div>
+                    <input type="text" name="search" id="name" placeholder="Search...">
+                    <input type="number" name="quantity" id="quantity" placeholder="00.000">
+                    <input type="number" name="price" id="price" placeholder="00.000">
+                    <input type="number" name="total-price" id="total-price" placeholder="00.000" disabled>
+                    
+                    
+                </form>
+                <!-- <table>
+                    <tr>
+                        <th>#</th>
+                        <th colspan="3">name</th>
+                        <th>quantity</th>
+                        <th>price</th>
+                        <th>total price</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td >
+                            <input type="text" placeholder="search" style="width: 100%;">
+                        </td>
+                        <td>
+                            <input type="number" placeholder="quantity" style="width: 90%;">
+                        </td>
+                        <td>
+                            <input type="number" placeholder="price" style="width: 90%;">
+                        </td>
+                        <td>
+                            <input type="number" disabled style="width: 90%;" value="487428">
+                        </td>
+                    </tr>
+                </table> -->
+            </div>
+            <div class="aside">aside</div>
+        </div>
+        <div class="row">
+            footer container
+        </div>
+    </div>
+    
+</body>
+<script src="./assets/js/scripts.js"></script>
+</html>

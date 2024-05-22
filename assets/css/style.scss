@@ -945,3 +945,51 @@ body{
     }
     
 }
+// order styling
+.order-container{
+    margin: 0rem;
+    padding: 1rem;
+}
+.order-container .grid-view{
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    background-color: white;
+    border: 1px solid red;
+}
+.order-container .grid-view .aside, .section{
+    background-color: white;
+    padding: 1rem;
+    border: 1px solid #F7F6F3;
+    border-radius: 5px;
+}
+.section form{
+    background-color: white;
+}
+.section form .label-holder label{
+    background-color: #F7F6F3;
+    font-weight: bold;
+    text-align: center;
+}
+.section form .label-holder{
+    
+}
+.section form .label-holder .search{
+    margin: 0% 30%;
+}
+.section form .label-holder .number-data{
+    margin: 0% 3%;
+}
+.section form input[type="text"]{
+    width: 60%;
+}
+.section form input[type="number"]{
+    width: 10%;
+}
+
+
+
+
+
+
+
+
