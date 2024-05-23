@@ -7,7 +7,7 @@
     } catch(error){
         console.log("some element did not exist !");
     }
-    getData();
+   
 })();
 window.addEventListener('scroll', function(event) {
    try{
