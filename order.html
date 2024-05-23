@@ -42,11 +42,12 @@
                         <label class="number-data" for="price">Price</label>
                         <label class="number-data" for="total-price">Total Price</label>
                     </div>
-                    <input type="text" name="search" id="browser" placeholder="Search..." onkeyup="searchFood(event)">
                     
+                    <input type="text" name="Items" id="Items" placeholder="Search..." onfocus="searchFood(event)">
                     <input type="number" name="quantity" id="quantity" placeholder="00.000">
                     <input type="number" name="price" id="price" placeholder="00.000">
                     <input type="number" name="total-price" id="total-price" placeholder="00.000" disabled>
+                    <div id="dynamic-element"></div>
                 </form>
             </div>
             <div class="aside">aside</div>
@@ -59,18 +60,19 @@
 </body>
 <script src="./assets/js/scripts.js"></script>
 <script>
+    let foodArray = [
+        {"name":"Qabuli","price":200,"stock":500},
+        {"name":"Kabab","price":200,"stock":500},
+        {"name":"Juice","price":100,"stock":500},
+        {"name":"ice cream","price":100,"stock":500},
+        {"name":"Shorba","price":200,"stock":500},
+        {"name":"Karayee","price":200,"stock":500},
+    ]
+    let htmlContent = '<ul><li>Qabuli</li><li>Kabab</li><li>Juice</li><li>Ice Cream</li><li>Shorba</li><li>Karayee</li></ul>';
     function searchFood(e){
-        let foodArray = [
-            'Qabuli',
-            'kabab',
-            'shorba',
-            'mahicha',
-            'juice',
-            'water',
-            'drinks',
-            'dough',
-        ]
-
+        document.getElementById("dynamic-element").innerHTML = htmlContent;
     }
+
 </script>
+
 </html>
