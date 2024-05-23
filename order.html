@@ -43,11 +43,11 @@
                         <label class="number-data" for="total-price">Total Price</label>
                     </div>
                     
-                    <input type="text" name="Items" id="Items" placeholder="Search..." onfocus="searchFood(event)">
-                    <input type="number" name="quantity" id="quantity" placeholder="00.000">
+                    <input type="text" name="Items" id="Items" placeholder="Search..." onchange="searchFood(event)">
+                    <input type="number" name="quantity" id="quantity" onchange="updateTotalPrice(event)" placeholder="00.000">
                     <input type="number" name="price" id="price" placeholder="00.000">
                     <input type="number" name="total-price" id="total-price" placeholder="00.000" disabled>
-                    <div id="dynamic-element"></div>
+ 
                 </form>
             </div>
             <div class="aside">aside</div>
@@ -68,9 +68,21 @@
         {"name":"Shorba","price":200,"stock":500},
         {"name":"Karayee","price":200,"stock":500},
     ]
-    let htmlContent = '<ul><li>Qabuli</li><li>Kabab</li><li>Juice</li><li>Ice Cream</li><li>Shorba</li><li>Karayee</li></ul>';
+
     function searchFood(e){
-        document.getElementById("dynamic-element").innerHTML = htmlContent;
+        console.log("searchin...");
+        let food = e.target.value;
+        foodArray.forEach(obj => {
+            if((obj.name).toLowerCase() === food.toLowerCase()){
+                document.getElementById("Items").value = obj.name;
+                document.getElementById("quantity").value = 1;
+                document.getElementById("price").value = obj.price;
+                document.getElementById("total-price").value = obj.price;
+            }
+        });
+    }
+    function updateTotalPrice(event){
+        
     }
 
 </script>
