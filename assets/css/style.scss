@@ -104,16 +104,21 @@ button[type="button"]:hover{
 .home{
     position: relative;
     width: 100%;
-    height: 100vh;
-    max-height: 60vh;
+    height: 30vh;
+    max-height: 30vh;
 }
-.home img{
-    z-index: -1;
-    max-height: 50vh;
-    width: 100%;
+
+.home .heading-content .heading-text{
+    font-size: 36px;
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px;
 }
-.heading-content{   
-    
+.home .heading-content .heading-sub-text{
+    padding-top: 0px;
+    padding-bottom: 20px;
+    font-weight: 400;
+    margin: 0px;
 }
 .apply-animation-left{
     animation: slideLeft 1.5s ease-in-out 1;
