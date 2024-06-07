@@ -99,47 +99,20 @@ button[type=button]:hover {
 }
 
 .container {
-  margin: 0 12.5%;
+  margin: 8rem 17rem;
 }
 
 .home {
-  max-height: 90vh;
   position: relative;
-}
-.home img {
-  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  max-height: 60vh;
 }
 
-.heading-content {
-  position: absolute;
-  top: 5%;
-  left: 10%;
-  margin: 15% 0;
-  width: 60%;
-  height: 20%;
-  z-index: 1;
-  background-color: transparent;
-}
-.heading-content .heading-text {
-  font-size: 48px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-}
-.heading-content .brand-name {
-  color: teal;
-  background-color: transparent;
-}
-.heading-content .heading-sub-text {
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-}
-.heading-content button {
-  margin: 1rem 0;
-  background-color: transparent;
+.home img {
+  z-index: -1;
+  max-height: 50vh;
+  width: 100%;
 }
 
 .apply-animation-left {
