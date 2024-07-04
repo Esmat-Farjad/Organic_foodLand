@@ -372,3 +372,23 @@ button[type="button"]:hover{
     display: grid;
     grid-template-columns: repeat(2, 50%);
 }
+.section-holder .contact-info .contact{
+    margin: 1rem;
+}
+.section-holder .contact-info .contact .icon{
+    font-size: 20px;
+    margin: 0rem 0.5rem;
+    color: teal;
+}
+.section-holder .contact-info .contact .title{
+    font-size: large;
+    font-weight: 600;
+    color: gray;
+}
+.section-holder .contact-info .contact .subtitle{
+    padding: 0rem 2rem 0.5rem 2.5rem;
+    color: gray;
+    display: block;
+    border-bottom: 1px solid $gray;
+    width: fit-content;
+}
