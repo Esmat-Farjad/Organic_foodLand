@@ -274,10 +274,10 @@ button[type=button]:hover {
   border: 1px solid rgb(204, 204, 204);
   margin: 2rem 10rem;
   border-radius: 5px;
+  padding: 3rem;
 }
 
 .newsletter .header {
-  padding: 2rem;
   text-align: center;
 }
 
@@ -294,23 +294,40 @@ button[type=button]:hover {
   margin: 0px;
 }
 
+.newsletter .header .subtitle {
+  font-size: medium;
+  padding: 0px;
+  margin: 0px;
+}
+
 .newsletter .news-container {
   margin: auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding-bottom: 2rem;
 }
 
 .news-container form {
-  border: 1px solid red;
   width: 70%;
+}
+
+.news-container form p {
+  padding: 0px;
+  margin: 0px;
+  font-size: medium;
+  text-align: center;
 }
 
 .form-input {
   outline: none;
   border: 1px solid gray;
+  border-right: none;
   border-radius: 8px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  padding: 0px 10px;
   width: 90%;
   height: 40px;
   display: inline;
@@ -321,7 +338,7 @@ button[type=button]:hover {
 }
 
 .custom-btn {
-  padding: 0.8rem 0.2rem;
+  padding: 0.7rem 0.2rem;
   outline: none;
   border: 1px solid gray;
   background-color: teal;
