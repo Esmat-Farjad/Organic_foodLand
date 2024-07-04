@@ -278,6 +278,7 @@ button[type=button]:hover {
 
 .newsletter .header {
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 .newsletter .header .icon {
@@ -297,6 +298,7 @@ button[type=button]:hover {
   font-size: medium;
   padding: 0px;
   margin: 0px;
+  color: gray;
 }
 
 .newsletter .news-container {
@@ -317,6 +319,7 @@ button[type=button]:hover {
   margin: 0px;
   font-size: medium;
   text-align: center;
+  color: gray;
 }
 
 .form-input {
@@ -333,7 +336,7 @@ button[type=button]:hover {
 }
 
 .form-input:focus {
-  border: 2px solid teal;
+  border: 1px solid teal;
 }
 
 .custom-btn {
@@ -354,4 +357,29 @@ button[type=button]:hover {
 
 .input-holder {
   position: relative;
+}
+
+.footer-content {
+  border-top: 1px solid rgb(204, 204, 204);
+  padding: 1rem 10rem;
+}
+
+.footer-content .branding h2 {
+  font-weight: bold;
+  padding: 0px;
+  margin: 0px;
+}
+
+.footer-content .branding span {
+  font-size: small;
+  padding: 0px;
+  margin: 0px;
+}
+
+.footer-content .center-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
 }/*# sourceMappingURL=style.css.map */
