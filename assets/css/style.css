@@ -97,6 +97,25 @@ button[type=button]:hover {
   color: white;
 }
 
+.navbar {
+  margin: 0rem 10rem;
+  display: flex;
+}
+
+.navbar .logo-holder .icon-holder {
+  display: none;
+}
+
+.navbar .logo-holder a img {
+  width: 100px;
+  padding: 3px 0px;
+}
+
+.navbar .nav-items .nav-link {
+  display: inline;
+  margin: 1rem;
+}
+
 .container {
   margin: 8rem 17rem;
 }

@@ -8,14 +8,9 @@
     <title>Tools</title>
 </head>
 <body>
-    <div class="spinner" id="spinner"></div>
     <div class="navbar" id="home">
         <div class="logo-holder">
-            <span class="brand-logo" id="#home">
-            <a href="#">
-                <img src="./assets/images/brand.png" alt="">
-            </a>
-            </span>
+            <a href="#"><img src="./assets/images/brand.png" alt=""></a>
             <span class="icon-holder">
                 <span class="close-icon"><i class="fa-solid fa-xmark"></i></span>
                 <span class="open-icon"><i class="fa-solid fa-bars"></i></span>
@@ -161,42 +156,8 @@
             <span>Welcome to blogland and enjoy</span>
         </div>
     </div>
-    
-    <!-- <div class="js-popup d-none">
-        <div class="header-text">
-            <h2>Alert !</h2>
-        </div>
-        <div class="body-text">
-            <p class="description-text">
-                This will smoothly transition the opacity and visibility properties
-                 over a duration of 0.5 seconds when the classes are added or removed.
-            </p>
-            <p class="option-button">
-                <button type="button">yes</button>
-                <button type="button" onclick="closeAlert()">concel</button>
-            </p>
-        </div>
-    </div> -->
+
 </body>
 <script src="./assets/js/scripts.js"></script>
-<script>
-    function closeAlert(){
-        let alert_box = document.querySelector(".js-popup");
-        if(!alert_box.classList.contains("d-none")){
-            alert_box.classList.remove("zoom-out-animation");
-            alert_box.classList.add("zoom-in-animation");
-            setTimeout(() => {
-                alert_box.classList.add("d-none");
-            }, 345); 
-        }  
-    }
-    function OpenAlert(){
-        let alert_box = document.querySelector(".js-popup");
-        if(alert_box.classList.contains("d-none")){
-            alert_box.classList.remove("d-none");
-            alert_box.classList.add("zoom-out-animation"); 
-        }
-    }
-      
-</script>
+
 </html>
