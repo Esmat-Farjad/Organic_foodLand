@@ -273,5 +273,44 @@ button[type="button"]:hover{
     margin: 0px;
 }
 .newsletter .news-container{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.news-container form{
+    border: 1px solid red;
+    width: 70%;
+}
+
+.form-input{
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 8px;
+    width: 90%;
+    height: 40px;
+    display: inline;
+}
+.form-input:focus{
+    border: 2px solid teal;
+}
+.custom-btn{
+    padding: 0.8rem 0.2rem;
+    outline: none;
+    border: 1px solid gray;
+    background-color: teal;
+    color: white;
+    font-weight: bold;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    display: inline;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 110;
     
+}
+.input-holder{
+    position: relative;
 }
