@@ -252,7 +252,7 @@ button[type="button"]:hover{
     padding: 0px;
 }
 .newsletter{
-    border: 1px solid rgb(204, 204, 204);
+    border: 1px solid $gray;
     margin: 2rem 10rem;
     border-radius: 5px;
     padding: 1rem;
@@ -335,7 +335,7 @@ button[type="button"]:hover{
     position: relative;
 }
 .footer-content{
-    border-top: 1px solid rgb(204, 204, 204);
+    border-top: 1px solid $gray;
     padding: 1rem 10rem;
 }
 
@@ -355,4 +355,20 @@ button[type="button"]:hover{
     align-items: center;
     padding: 0px;
     margin: 0px;
+}
+.section-holder .location-holder{
+    border: 1px solid $gray;
+    border-radius: 5px;
+    width: fit-content;
+    columns: 1/2;
+}
+.section-holder .location-holder{
+    columns: 2/2;
+}
+.section-holder .location-holder iframe{
+    border: none;
+}
+.section-holder .display-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
 }

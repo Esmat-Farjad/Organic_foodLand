@@ -387,4 +387,27 @@ button[type=button]:hover {
   align-items: center;
   padding: 0px;
   margin: 0px;
+}
+
+.section-holder .location-holder {
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 5px;
+  width: -moz-fit-content;
+  width: fit-content;
+  -moz-columns: 1/2;
+       columns: 1/2;
+}
+
+.section-holder .location-holder {
+  -moz-columns: 2/2;
+       columns: 2/2;
+}
+
+.section-holder .location-holder iframe {
+  border: none;
+}
+
+.section-holder .display-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
 }/*# sourceMappingURL=style.css.map */
