@@ -273,7 +273,7 @@ button[type=button]:hover {
   border: 1px solid rgb(204, 204, 204);
   margin: 2rem 10rem;
   border-radius: 5px;
-  padding: 3rem;
+  padding: 1rem;
 }
 
 .newsletter .header {
@@ -322,6 +322,10 @@ button[type=button]:hover {
   color: gray;
 }
 
+.news-container p {
+  font-size: small;
+}
+
 .form-input {
   outline: none;
   border: 1px solid gray;
@@ -333,6 +337,7 @@ button[type=button]:hover {
   width: 90%;
   height: 40px;
   display: inline;
+  margin-bottom: 1rem;
 }
 
 .form-input:focus {
