@@ -409,11 +409,18 @@ button[type=button]:hover {
 
 .section-holder .display-grid {
   display: grid;
+  margin: 2rem 0rem;
   grid-template-columns: repeat(2, 50%);
 }
 
 .section-holder .contact-info .contact {
   margin: 1rem;
+}
+
+.section-holder .contact-info {
+  padding: 1rem;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 5px;
 }
 
 .section-holder .contact-info .contact .icon {
