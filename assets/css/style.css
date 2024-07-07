@@ -216,7 +216,7 @@ button[type=button]:hover {
 }
 
 .card {
-  max-width: 18rem;
+  max-width: 100%;
   max-height: 16rem;
   overflow: hidden;
   position: relative;
@@ -234,6 +234,12 @@ button[type=button]:hover {
   height: 150px;
   -o-object-fit: cover;
      object-fit: cover;
+  cursor: pointer;
+}
+
+.card .card-body img:hover {
+  filter: brightness(75%);
+  transition: filter 200ms ease;
 }
 
 .card .card-footer {
@@ -269,7 +275,7 @@ button[type=button]:hover {
   background-color: teal;
   color: white;
   font-weight: 700;
-  border: 2px solid rgb(114, 245, 245);
+  border: 1px solid teal;
   border-radius: 2px;
   padding: 2px 5px;
   font-size: 12px;
@@ -540,38 +546,40 @@ button[type=button]:hover {
 .section-holder .item-holder {
   display: grid;
   grid-gap: 24px;
+  justify-content: center;
+  align-items: center;
 }
 
 @media only screen and (min-width: 640px) {
   .section-holder {
-    margin: 1rem 2rem;
+    margin: 3rem 2rem;
   }
   .section-holder .item-holder {
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(2, 48%);
   }
 }
 @media only screen and (min-width: 768px) {
   .section-holder {
-    margin: 1rem 2rem;
+    margin: 3rem 2rem;
   }
   .section-holder .item-holder {
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(2, 48%);
   }
 }
 @media only screen and (min-width: 1280px) {
   .section-holder {
-    margin: 2rem 10rem;
+    margin: 4rem 10rem;
   }
   .section-holder .item-holder {
-    grid-template-columns: repeat(4, 25%);
+    grid-template-columns: repeat(4, 23.5%);
   }
 }
 @media only screen and (min-width: 1080px) {
   .section-holder {
-    margin: 2rem 10rem;
+    margin: 4rem 10rem;
   }
   .section-holder .item-holder {
-    grid-template-columns: repeat(4, 25%);
+    grid-template-columns: repeat(4, 23.5%);
   }
 }
 .section-holder .tab-holder {
@@ -580,8 +588,11 @@ button[type=button]:hover {
 }
 
 .section-holder .tab-holder .more-location {
+  margin-top: auto;
+  margin-bottom: auto;
   margin-left: auto;
   font-size: medium;
+  vertical-align: middle;
 }
 
 .section-holder .tab-holder .more-location a:hover .chevron-icon {
