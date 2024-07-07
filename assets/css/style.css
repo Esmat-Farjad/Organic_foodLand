@@ -557,6 +557,9 @@ button[type=button]:hover {
   .section-holder .item-holder {
     grid-template-columns: repeat(2, 48%);
   }
+  .user-manual .section-holder .grid-system {
+    grid-template-columns: repeat(1, 96%);
+  }
 }
 @media only screen and (min-width: 768px) {
   .section-holder {
@@ -564,6 +567,9 @@ button[type=button]:hover {
   }
   .section-holder .item-holder {
     grid-template-columns: repeat(2, 48%);
+  }
+  .user-manual .section-holder .grid-system {
+    grid-template-columns: repeat(1, 96%);
   }
 }
 @media only screen and (min-width: 1280px) {
@@ -573,6 +579,9 @@ button[type=button]:hover {
   .section-holder .item-holder {
     grid-template-columns: repeat(4, 23.5%);
   }
+  .user-manual .section-holder .grid-system {
+    grid-template-columns: repeat(3, 30%);
+  }
 }
 @media only screen and (min-width: 1080px) {
   .section-holder {
@@ -580,6 +589,9 @@ button[type=button]:hover {
   }
   .section-holder .item-holder {
     grid-template-columns: repeat(4, 23.5%);
+  }
+  .user-manual .section-holder .grid-system {
+    grid-template-columns: repeat(3, 30%);
   }
 }
 .section-holder .tab-holder {
@@ -598,4 +610,21 @@ button[type=button]:hover {
 .section-holder .tab-holder .more-location a:hover .chevron-icon {
   margin-left: 10px;
   transition: margin-left 0.2s;
+}
+
+.user-manual {
+  background-color: teal;
+  color: white;
+  padding: 1rem;
+  font-weight: 500;
+}
+
+.user-manual .section-holder .grid-system {
+  display: grid;
+  grid-gap: 24px;
+  text-align: center;
+}
+
+.user-manual .section-holder .grid-system {
+  border: 1px solid black;
 }/*# sourceMappingURL=style.css.map */
