@@ -603,3 +603,23 @@ button[type="button"]:hover{
     padding: 0px;
     margin: 0px;
 }
+.restautant{
+    background-color: #f0f4f5;
+    padding: 3rem;
+    
+}
+.restautant .restaurant-holder{
+    display: grid;
+    grid-gap: 24px;
+    grid-template-columns: repeat(6,15%);
+}
+.restautant .restaurant-holder .sub-card{
+    background-color: #e6eced;
+    padding: 0.5rem;
+    text-align: center;
+    cursor: pointer;
+}
+.restautant .restaurant-holder .sub-card:hover{
+    background-color: #dbe0e0;
+    transition: background-color 200ms ease;
+}
