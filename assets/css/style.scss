@@ -507,3 +507,15 @@ button[type="button"]:hover{
         grid-template-columns: repeat(4,25%);
     }
 }
+.section-holder .tab-holder{
+    display: flex;
+    flex-direction: row;
+}
+.section-holder .tab-holder .more-location{
+    margin-left: auto;
+    font-size: medium;
+}
+.section-holder .tab-holder .more-location a:hover .chevron-icon{
+    margin-left: 10px;
+    transition: margin-left 0.2s;
+}
