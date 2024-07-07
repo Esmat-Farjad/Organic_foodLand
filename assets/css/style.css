@@ -275,10 +275,6 @@ button[type=button]:hover {
   left: 2%;
 }
 
-.section-holder {
-  margin: 2rem 10rem;
-}
-
 .section-holder .heading-content {
   margin: 0rem auto;
   text-align: center;
@@ -508,25 +504,13 @@ button[type=button]:hover {
   color: black;
 }
 
-.section-holder .item-holder {
-  display: flex;
-  gap: 1rem;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 2rem 0rem;
-}
-
 .section-holder .item-holder .list-item {
   overflow: hidden;
-  width: -moz-fit-content;
-  width: fit-content;
 }
 
 .section-holder .item-holder .list-item a img {
   width: 100%;
-  height: 180px;
-  margin: auto;
+  height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
   filter: brightness(50%);
@@ -534,7 +518,7 @@ button[type=button]:hover {
 
 .section-holder .item-holder .list-item a img:hover {
   filter: brightness(100%);
-  transition: filter 0.5s ease;
+  transition: filter 200ms ease;
 }
 
 .section-holder .item-holder .list-item {
@@ -548,4 +532,42 @@ button[type=button]:hover {
   color: white;
   font-size: medium;
   font-weight: bold;
+}
+
+.section-holder .item-holder {
+  display: grid;
+  grid-gap: 24px;
+}
+
+@media only screen and (min-width: 640px) {
+  .section-holder {
+    margin: 1rem 2rem;
+  }
+  .section-holder .item-holder {
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+@media only screen and (min-width: 768px) {
+  .section-holder {
+    margin: 1rem 2rem;
+  }
+  .section-holder .item-holder {
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .section-holder {
+    margin: 2rem 10rem;
+  }
+  .section-holder .item-holder {
+    grid-template-columns: repeat(4, 25%);
+  }
+}
+@media only screen and (min-width: 1080px) {
+  .section-holder {
+    margin: 2rem 10rem;
+  }
+  .section-holder .item-holder {
+    grid-template-columns: repeat(4, 25%);
+  }
 }/*# sourceMappingURL=style.css.map */

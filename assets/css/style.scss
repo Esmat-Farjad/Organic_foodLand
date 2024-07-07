@@ -253,9 +253,7 @@ button[type="button"]:hover{
     top: 2%;
     left: 2%;
 }
-.section-holder{
-    margin: 2rem 10rem;
-}
+
 // section hading
 .section-holder .heading-content{
     margin: 0rem auto;
@@ -447,28 +445,19 @@ button[type="button"]:hover{
 .twitter{
     color: black;
 }
-.section-holder .item-holder{
-    display: flex;
-    gap: 1rem;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem 0rem;
-}
+
 .section-holder .item-holder .list-item{
     overflow: hidden;
-    width: fit-content;
 }
 .section-holder .item-holder .list-item a img{
     width: 100%;
-    height: 180px;
-    margin: auto;
+    height: 200px;
     object-fit: cover;
     filter: brightness(50%);
 }
 .section-holder .item-holder .list-item a img:hover{
     filter: brightness(100%);
-    transition: filter 0.5s ease;
+    transition: filter 200ms ease;
 }
 .section-holder .item-holder .list-item {
     position: relative;
@@ -480,4 +469,41 @@ button[type="button"]:hover{
     color: white;
     font-size: medium;
     font-weight: bold;
+}
+.section-holder .item-holder{
+    display: grid;
+    grid-gap: 24px;
+}
+// device implementation desing
+@media only screen and (min-width: $sm)  {
+    .section-holder{
+        margin: 1rem 2rem;
+    }
+    .section-holder .item-holder{
+        grid-template-columns: repeat(2,50%);
+    }
+}
+@media only screen and (min-width: $md){
+    .section-holder{
+        margin: 1rem 2rem;
+    }
+    .section-holder .item-holder{
+        grid-template-columns: repeat(2,50%);
+    }
+}
+@media only screen and (min-width: $xl)  {
+    .section-holder{
+        margin: 2rem 10rem;
+    } 
+    .section-holder .item-holder{ 
+        grid-template-columns: repeat(4,25%);
+    }
+}
+@media only screen and (min-width: $lg){
+    .section-holder{
+        margin: 2rem 10rem;
+    }
+    .section-holder .item-holder{
+        grid-template-columns: repeat(4,25%);
+    }
 }
