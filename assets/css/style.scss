@@ -613,13 +613,34 @@ button[type="button"]:hover{
     grid-gap: 24px;
     grid-template-columns: repeat(6,15%);
 }
-.restautant .restaurant-holder .sub-card{
+.restautant .section-holder .restaurant-holder .sub-card{
     background-color: #e6eced;
-    padding: 0.5rem;
+    padding: 1rem;
     text-align: center;
     cursor: pointer;
+    color: rgb(1, 88, 88);
 }
-.restautant .restaurant-holder .sub-card:hover{
+.restautant .section-holder .restaurant-holder .sub-card:hover{
     background-color: #dbe0e0;
     transition: background-color 200ms ease;
+}
+.restautant .section-holder .restaurant-holder .sub-card .title{
+    font-size: 14px;
+    font-weight: 700;
+    padding: 0px;
+    margin: 0px;
+}
+.restautant .section-holder .heading-content{
+    margin-bottom: 3rem;
+}
+.restautant .section-holder .heading-content .title{
+    font-size: 48px;
+    font-weight: 400;
+    padding: 0px;
+    margin: 0px;
+}
+.restautant .section-holder .heading-content .subtitle{
+    font-size: medium;
+    padding: 0px;
+    margin: 0px;
 }
