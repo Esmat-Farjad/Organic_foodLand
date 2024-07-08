@@ -422,25 +422,14 @@ button[type=button]:hover {
 }
 
 .section-holder .location-holder {
-  width: -moz-fit-content;
-  width: fit-content;
-  -moz-columns: 1/2;
-       columns: 1/2;
-}
-
-.section-holder .location-holder {
-  -moz-columns: 2/2;
-       columns: 2/2;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 5px;
 }
 
 .section-holder .location-holder iframe {
   border: none;
-}
-
-.section-holder .display-grid {
-  display: grid;
-  margin: 2rem 0rem;
-  grid-template-columns: repeat(2, 50%);
+  width: 100%;
+  height: 100%;
 }
 
 .section-holder .contact-info .contact {
@@ -562,6 +551,9 @@ button[type=button]:hover {
   .restautant .restaurant-holder {
     grid-template-columns: repeat(3, 32%);
   }
+  .two-col-grid {
+    grid-template-columns: repeat(1, 98%);
+  }
 }
 @media only screen and (min-width: 768px) {
   .section-holder {
@@ -578,6 +570,9 @@ button[type=button]:hover {
   }
   .restautant .restaurant-holder {
     grid-template-columns: repeat(4, 23%);
+  }
+  .two-col-grid {
+    grid-template-columns: repeat(1, 98%);
   }
 }
 @media only screen and (min-width: 1280px) {
@@ -596,6 +591,9 @@ button[type=button]:hover {
   .restautant .restaurant-holder {
     grid-template-columns: repeat(6, 15%);
   }
+  .two-col-grid {
+    grid-template-columns: repeat(2, 48%);
+  }
 }
 @media only screen and (min-width: 1080px) {
   .section-holder {
@@ -613,10 +611,18 @@ button[type=button]:hover {
   .restautant .restaurant-holder {
     grid-template-columns: repeat(6, 15%);
   }
+  .two-col-grid {
+    grid-template-columns: repeat(2, 48%);
+  }
 }
 .section-holder .tab-holder {
   display: flex;
   flex-direction: row;
+}
+
+.two-col-grid {
+  display: grid;
+  margin: 3rem 0rem;
 }
 
 .section-holder .tab-holder .more-location {
