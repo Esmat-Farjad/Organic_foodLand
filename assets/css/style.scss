@@ -496,6 +496,9 @@ button[type="button"]:hover{
     .user-manual{
         height: 800px;
     }
+    .restautant .restaurant-holder{
+        grid-template-columns: repeat(3,32%);
+    }
    
 }
 @media only screen and (min-width: $md){
@@ -510,6 +513,9 @@ button[type="button"]:hover{
     }
     .user-manual{
         height: 800px;
+    }
+    .restautant .restaurant-holder{
+        grid-template-columns: repeat(4,23%);
     }
     
 }
@@ -526,6 +532,9 @@ button[type="button"]:hover{
     .user-manual{
         height: 400px;
     }
+    .restautant .restaurant-holder{
+        grid-template-columns: repeat(6,15%);
+    }
     
 }
 @media only screen and (min-width: $lg){
@@ -541,6 +550,9 @@ button[type="button"]:hover{
     }
     .user-manual{
         height: 400px;
+    }
+    .restautant .restaurant-holder{
+        grid-template-columns: repeat(6,15%);
     }
     
 }
@@ -611,7 +623,6 @@ button[type="button"]:hover{
 .restautant .restaurant-holder{
     display: grid;
     grid-gap: 24px;
-    grid-template-columns: repeat(6,15%);
 }
 .restautant .section-holder .restaurant-holder .sub-card{
     background-color: #e6eced;
