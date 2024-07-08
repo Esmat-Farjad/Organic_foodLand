@@ -299,7 +299,7 @@ button[type=button]:hover {
 
 .newsletter {
   border: 1px solid rgb(204, 204, 204);
-  margin: 2rem 10rem;
+  margin: 5%;
   border-radius: 5px;
   padding: 1rem;
 }
