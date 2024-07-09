@@ -6,37 +6,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Tools</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script> 
+        $(function(){
+          $("#includedHeader").load("header.html"); 
+        });
+    </script> 
 </head>
 <body>
-    <div class="navbar" id="home">
-        <div class="logo-holder">
-            <a href="#"><img src="./assets/images/brand.png" alt=""></a>
-            <span class="icon-holder">
-                <span class="close-icon"><i class="fa-solid fa-xmark"></i></span>
-                <span class="open-icon"><i class="fa-solid fa-bars"></i></span>
-            </span>
-        </div>
-        <ul class="nav-items">
-            <li class="nav-link">Home</li>
-            <li class="nav-link">Blogs</li>
-            <li class="nav-link" id="account">Account&nbsp;<i id="chevron" class="fa-solid fa-chevron-down"></i></li>
-            <ul class="sub-menu" id="sub-menu">
-                <li><a href="#">Profile</a></li>
-                <li><a href="vendor/dashboard.html">Vendor</a></li>
-                <li><a href="signin.html">Sign In</a></li>
-                <li><a href="#" onclick="OpenAlert()">Sign Out</a></li>
-            </ul>
-        </ul>
-    </div>
+    <div id="includedHeader"></div> 
     <div class="main-page-container"></div>
     <div class="home">
         <div class="heading-content">
-            <h1 class="heading-text">Welcome to <span class="brand-name">BlogLand</span></h1>
+            <h1 class="heading-text">Welcome to <span class="brand-name">Organic</span> Food Land</h1>
             <h4 class="heading-sub-text">We are here to communicate some interesting things</h4>
             <button type="button" class="page-button">Get Started</button>
         </div>
     </div>
-   
     <!-- card section start -->
     <div class="section-holder">
         <div class="tab-holder">
