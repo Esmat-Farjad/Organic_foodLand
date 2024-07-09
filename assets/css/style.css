@@ -124,22 +124,29 @@ button[type=button]:hover {
   display: none;
 }
 
-.container {
-  margin: 10%;
+.main-page-container {
+  background-image: url("../images/bg_image.jpg");
+  width: 100%;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
 .home {
-  position: relative;
-  width: 100%;
-  height: 30vh;
-  max-height: 30vh;
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  text-shadow: 5px 5px 24px;
 }
 
 .home .heading-content .heading-text {
   font-size: 36px;
   font-weight: bold;
   padding: 0px;
-  margin: 0px;
+  margin: auto;
 }
 
 .home .heading-content .heading-sub-text {
@@ -554,6 +561,9 @@ button[type=button]:hover {
   .two-col-grid {
     grid-template-columns: repeat(1, 98%);
   }
+  .main-page-container {
+    filter: opacity(50%);
+  }
 }
 @media only screen and (min-width: 768px) {
   .section-holder {
@@ -573,6 +583,9 @@ button[type=button]:hover {
   }
   .two-col-grid {
     grid-template-columns: repeat(1, 98%);
+  }
+  .main-page-container {
+    filter: opacity(70%);
   }
 }
 @media only screen and (min-width: 1280px) {
@@ -594,6 +607,9 @@ button[type=button]:hover {
   .two-col-grid {
     grid-template-columns: repeat(2, 48%);
   }
+  .main-page-container {
+    filter: opacity(100%);
+  }
 }
 @media only screen and (min-width: 1080px) {
   .section-holder {
@@ -613,6 +629,9 @@ button[type=button]:hover {
   }
   .two-col-grid {
     grid-template-columns: repeat(2, 48%);
+  }
+  .main-page-container {
+    filter: opacity(100%);
   }
 }
 .section-holder .tab-holder {
