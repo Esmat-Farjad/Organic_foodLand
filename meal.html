@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Locations</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script> 
+        $(function(){
+          $("#includedHeader").load("header.html"); 
+        });
+    </script> 
+</head>
+<body> 
+    <div id="includedHeader"></div> 
+    <div class="section-holder">
+        <div class="tab-holder">
+            <h2 class="text-light">All Listing</h2>
+            <h2 class="more-location">
+                <div class="custom-choice">
+                    <p class="choice-title">Food</p>
+                    <p class="choice-select">
+                        select food 
+                        <span class="choice-icon"> 
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                    </p>
+                    <div class="choice-options not-active">
+                        <ul>
+                            <li><a href="#">food name</a></li>
+                            <li><a href="#">food name</a></li>
+                            <li><a href="#">food name</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </h2>
+        </div>
+
+    </div>
+
+    
+</body>
+<script>
+    document.querySelector(".choice-select").addEventListener("click", ()=>{
+        console.log("clicke");
+        const choiceOption = document.querySelector(".choice-options");
+        const chevron = document.querySelector(".fa-solid");
+        if(choiceOption.classList.contains("not-active")){
+            choiceOption.classList.remove("not-active");
+            choiceOption.classList.add("active");
+            chevron.classList.remove("fa-chevron-down");
+            chevron.classList.add("fa-chevron-up");
+
+        }
+    })
+</script>
+
+</html>
