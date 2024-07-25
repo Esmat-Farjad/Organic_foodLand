@@ -699,20 +699,24 @@ button[type="button"]:hover{
     flex-wrap: nowrap;
     gap: 5px;
 }
+
 .select-element .select-options ul{
     margin: 0px;
     padding: 0px;
     list-style-type: none;
     font-size: small;   
     border: 1px solid $gray;
+    
 }
 .select-element .select-options ul li{
     font-size: small;
-    padding: 10px;  
+    padding: 10px; 
 }
 // custom select styling
 .select-element .select-title{
     padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    overflow: hidden;
     background-color: $gray;
     cursor: pointer;
 }

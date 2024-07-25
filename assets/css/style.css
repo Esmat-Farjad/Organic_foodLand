@@ -781,6 +781,8 @@ button[type=button]:hover {
 
 .select-element .select-title {
   padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  overflow: hidden;
   background-color: rgb(241, 241, 241);
   cursor: pointer;
 }
