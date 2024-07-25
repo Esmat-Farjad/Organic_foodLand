@@ -822,4 +822,54 @@ button[type=button]:hover {
 
 .light-heading {
   font-weight: lighter;
+}
+
+.food-holder .image-holder img {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 250px;
+  transition: transform 0.5s;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+
+.food-holder .image-holder img:hover { /* IE 9 */ /* Safari 3-8 */
+  transform: scale(1.1);
+}
+
+.description .restaurant-names {
+  list-style-type: none;
+  margin: 1rem 0rem;
+  padding: 0px;
+}
+
+.description .restaurant-name, li {
+  display: inline;
+  padding: 0xp;
+  margin: 0px;
+}
+
+.description .combinations {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.description .combinations, li {
+  display: inline;
+  padding: 0xp;
+  margin: 0px;
+}
+
+.description .combinations, li a {
+  margin-right: 8px;
+}
+
+.description .timing {
+  color: gray;
+}
+
+.text-red {
+  color: orange;
 }/*# sourceMappingURL=style.css.map */
