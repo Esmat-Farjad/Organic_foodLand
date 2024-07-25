@@ -919,4 +919,28 @@ textarea {
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 10px;
+}
+
+button[type=submit] {
+  border: 1px solid rgb(241, 241, 241);
+  padding: 10px;
+  transition: all 0.3s;
+}
+
+button[type=submit]:hover {
+  border: 1px solid rgb(118, 194, 194);
+  color: teal;
+  font-weight: bold;
+}
+
+button[type=reset] {
+  border: 1px solid rgb(241, 241, 241);
+  padding: 10px;
+  transition: all 0.3s;
+}
+
+button[type=reset]:hover {
+  border: 1px solid rgb(247, 135, 6);
+  color: rgb(247, 135, 6);
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */
