@@ -766,15 +766,25 @@ button[type=button]:hover {
   gap: 5px;
 }
 
-.select-element {
-  padding: 0.5rem 1rem;
-  background-color: rgb(241, 241, 241);
+.select-element .select-options ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  font-size: small;
+  border: 1px solid rgb(241, 241, 241);
+}
+
+.select-element .select-options ul li {
+  font-size: small;
+  padding: 10px;
 }
 
 .select-element .select-title {
-  padding: 0px;
-  margin: 0px;
+  padding: 0.5rem 1rem;
+  background-color: rgb(241, 241, 241);
+  cursor: pointer;
 }
+
 .select-element .select-title .title {
   padding: 0xp;
   margin: 0px;
@@ -782,11 +792,13 @@ button[type=button]:hover {
   font-size: small;
   font-weight: 500;
 }
+
 .select-element .select-title .select-amenity {
   font-size: medium;
   color: rgb(36, 35, 35);
   font-weight: 500;
 }
-.select-element .select-title .select-amenity .choice-icon {
+
+.select-element .select-title .select-amenity .icon-chevron {
   margin-left: 16px;
 }/*# sourceMappingURL=style.css.map */

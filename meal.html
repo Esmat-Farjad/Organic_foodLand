@@ -25,10 +25,8 @@
                         <div class="select-title">
                             <p class="title">Food</p>
                             <div class="select-amenity">
-                                select food 
-                                <span class="choice-icon"> 
-                                    <i class="chevron-icon fa-solid fa-chevron-down"></i>
-                                </span>
+                                select food amenity
+                                <i class="icon-chevron fa-solid fa-chevron-down"></i>
                             </div>
                         </div>
                         <!-- select options -->
@@ -45,10 +43,8 @@
                         <div class="select-title">
                             <p class="title">Food</p>
                             <div class="select-amenity">
-                                select food 
-                                <span class="choice-icon"> 
-                                    <i class="chevron-icon fa-solid fa-chevron-down"></i>
-                                </span>
+                                select location amenity 
+                                <i class="icon-chevron fa-solid fa-chevron-down"></i>
                             </div>
                         </div>
                         <!-- select options -->
@@ -90,9 +86,12 @@
     const selects = document.querySelectorAll(".select-element");
     selects.forEach(select => {
             const selectTitle = select.querySelector('.select-title');
+            const amenity = selectTitle.querySelector(".select-amenity");
+            const icon = amenity.querySelector(".icon-chevron");
             const selectOption = select.querySelector(".select-options");
             selectTitle.addEventListener("click",() => {
                 selectOption.classList.toggle("not-active");
+                icon.classList.toggle("rotate-element");
             });
             
     });
