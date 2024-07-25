@@ -891,7 +891,7 @@ textarea {
   margin-bottom: 10px;
 }
 
-.input-text:focus, textarea:focus {
+.input-text:focus, textarea:focus, .quantity:focus {
   outline: none;
   border: 2px solid teal;
 }
@@ -904,4 +904,19 @@ textarea {
 
 .order-form {
   padding: 0rem 1.5rem;
+}
+
+.quantity {
+  display: block;
+  border: 1px solid rgb(241, 241, 241);
+  padding: 10px;
+  width: 90%;
+  margin-bottom: 10px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
 }/*# sourceMappingURL=style.css.map */

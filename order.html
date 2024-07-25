@@ -50,12 +50,23 @@
                 <div class="order-form">
                     <form action="#">
                         <p>Choose your meal size</p>
-                        <input type="checkbox" class="input-checkbox" name="large" id="large">
-                        <label for="large">Large</label>
-                        <input type="checkbox" class="input-checkbox" name="medium" id="medium">
-                        <label for="medium">Medium</label>
-                        <input type="checkbox" class="input-checkbox" name="small" id="small">
-                        <label for="small">Small</label>
+                        <div class="flex-container">
+                            <div>
+                                <input type="checkbox" class="input-checkbox" name="large" id="large">
+                                <label for="large">Large</label>
+                                <input type="number" name="quantity" id="large" class="quantity" placeholder="Quantity..">
+                            </div>
+                            <div>
+                                <input type="checkbox" class="input-checkbox" name="medium" id="medium">
+                                <label for="medium">Medium</label>
+                                <input type="number" name="quantity" id="medium" class="quantity" placeholder="Quantity..">
+                            </div>
+                            <div>
+                                <input type="checkbox" class="input-checkbox" name="small" id="small">
+                                <label for="small">Small</label>
+                                <input type="number" name="quantity" id="small" class="quantity" placeholder="Quantity..">
+                            </div>
+                        </div>
                         <p>Enter your persoanl & Address information to deliver your meal</p>
                         <label for="fullname">Full Name</label>
                         <input type="text" name="fullname" id="fullname" class="input-text" placeholder="Tara Pe...">
