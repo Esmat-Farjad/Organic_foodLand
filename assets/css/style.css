@@ -254,15 +254,16 @@ button[type=button]:hover {
 }
 
 .card-footer .title {
-  font-size: medium;
-  font-weight: bold;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 0px;
   display: block;
   background-color: inherit;
 }
 
 .card-footer .sub-title {
   font-size: small;
-  font-weight: bold;
+  font-weight: lighter;
   display: block;
   margin-bottom: 5px;
   background-color: inherit;
