@@ -19,22 +19,65 @@
         <div class="tab-holder">
             <h2 class="text-light">All Listing</h2>
             <h2 class="more-location">
-                <div class="custom-choice">
-                    <p class="choice-title">Food</p>
-                    <p class="choice-select">
-                        select food 
-                        <span class="choice-icon"> 
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </span>
-                    </p>
-                    <div class="choice-options not-active">
-                        <ul>
-                            <li><a href="#">food name</a></li>
-                            <li><a href="#">food name</a></li>
-                            <li><a href="#">food name</a></li>
-                        </ul>
+                <div class="select-holder">
+                    <div class="select-element">
+                        <!-- select title -->
+                        <div class="select-title">
+                            <p class="title">Food</p>
+                            <div class="select-amenity">
+                                select food 
+                                <span class="choice-icon"> 
+                                    <i class="chevron-icon fa-solid fa-chevron-down"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- select options -->
+                        <div class="select-options not-active">
+                            <ul>
+                                <li><a href="#">Location name</a></li>
+                                <li><a href="#">Location name</a></li>
+                                <li><a href="#">Location name</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    
+                    <div class="select-element">
+                        <!-- select title -->
+                        <div class="select-title">
+                            <p class="title">Food</p>
+                            <div class="select-amenity">
+                                select food 
+                                <span class="choice-icon"> 
+                                    <i class="chevron-icon fa-solid fa-chevron-down"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- select options -->
+                        <div class="select-options not-active">
+                            <ul>
+                                <li><a href="#">Location name</a></li>
+                                <li><a href="#">Location name</a></li>
+                                <li><a href="#">Location name</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- <div class="custom-choice">
+                        <p class="choice-title">Food</p>
+                        <p class="choice-select">
+                            <div class="select-amenity">
+                                select food 
+                                <span class="choice-icon"> 
+                                    <i class="chevron-icon fa-solid fa-chevron-down"></i>
+                                </span>
+                            </div>
+                        </p>
+                        <div class="choice-options not-active">
+                            <ul>
+                                <li><a href="#">Location name</a></li>
+                                <li><a href="#">Location name</a></li>
+                                <li><a href="#">Location name</a></li>
+                            </ul>
+                        </div>
+                    </div> -->
                 </div>
             </h2>
         </div>
@@ -44,18 +87,24 @@
     
 </body>
 <script>
-    document.querySelector(".choice-select").addEventListener("click", ()=>{
-        console.log("clicke");
-        const choiceOption = document.querySelector(".choice-options");
-        const chevron = document.querySelector(".fa-solid");
-        if(choiceOption.classList.contains("not-active")){
-            choiceOption.classList.remove("not-active");
-            choiceOption.classList.add("active");
-            chevron.classList.remove("fa-chevron-down");
-            chevron.classList.add("fa-chevron-up");
-
-        }
-    })
+    const selects = document.querySelectorAll(".select-element");
+    selects.forEach(select => {
+            const selectTitle = select.querySelector('.select-title');
+            const selectOption = select.querySelector(".select-options");
+            selectTitle.addEventListener("click",() => {
+                selectOption.classList.toggle("not-active");
+            });
+            
+    });
+        
+  
+    // document.querySelector(".choice-select").addEventListener("click", ()=>{
+    //     console.log("clicke");
+    //     const choiceOption = document.querySelector(".choice-options");
+    //     const chevron = document.querySelector(".chevron-icon");
+    //     choiceOption.classList.toggle("not-active");
+    //     chevron.classList.toggle("rotate-element");
+    // });
 </script>
 
 </html>

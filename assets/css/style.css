@@ -750,55 +750,43 @@ button[type=button]:hover {
   margin: 0px;
 }
 
-.custom-choice {
-  background-color: rgb(241, 241, 241);
-  border: none;
-  padding: 1rem 2rem;
-}
-
-.custom-choice .choice-title {
-  padding: 0px;
-  margin: 0px;
-  color: gray;
-  font-weight: 500;
-  font-size: 13px;
-}
-
-.custom-choice .choice-select {
-  padding: 0px;
-  margin: 0px;
-  font-weight: 500;
-  color: rgb(27, 26, 26);
-}
-.custom-choice .choice-select .choice-icon {
-  margin-left: 1.5rem;
-}
-
-.choice-options {
-  padding: 0px;
-  margin: 1rem 0rem;
-}
-.choice-options ul {
-  margin: 0px;
-  padding: 0px;
-  list-style-type: none;
-}
-.choice-options ul li {
-  margin: 0px;
-  padding: 0.3rem 0rem;
-}
-.choice-options ul li a {
-  font-size: 12px;
-  font-weight: 500;
-  text-decoration: none;
-  color: rgb(27, 26, 26);
-  background-color: transparent;
-}
-
 .not-active {
   display: none;
 }
 
-.active {
-  display: inline-block;
+.rotate-element {
+  transform: rotate(180deg);
+  transition: transform 0.5s ease;
+}
+
+.select-holder {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 5px;
+}
+
+.select-element {
+  padding: 0.5rem 1rem;
+  background-color: rgb(241, 241, 241);
+}
+
+.select-element .select-title {
+  padding: 0px;
+  margin: 0px;
+}
+.select-element .select-title .title {
+  padding: 0xp;
+  margin: 0px;
+  color: gray;
+  font-size: small;
+  font-weight: 500;
+}
+.select-element .select-title .select-amenity {
+  font-size: medium;
+  color: rgb(36, 35, 35);
+  font-weight: 500;
+}
+.select-element .select-title .select-amenity .choice-icon {
+  margin-left: 16px;
 }/*# sourceMappingURL=style.css.map */
