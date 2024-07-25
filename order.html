@@ -1,107 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <title>Locations</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script> 
+            $(function(){
+              $("#includedHeader").load("header.html"); 
+            });
+        </script> 
+    </head>
 <body>
-    <div class="navbar" id="home">
-        <div class="logo-holder">
-            <span class="brand-logo" id="#home">
-                <a href="#">
-                    <img src="./assets/images/brand.png" alt="">
-                </a>
-                </span>
-            <span class="icon-holder">
-                <span class="close-icon"><i class="fa-solid fa-xmark"></i></span>
-                <span class="open-icon"><i class="fa-solid fa-bars"></i></span>
-            </span>
-        </div>
-        <ul class="nav-items">
-            <li class="nav-link">Home</li>
-            <li class="nav-link">Blogs</li>
-            <li class="nav-link" id="account">Account&nbsp;<i id="chevron" class="fa-solid fa-chevron-down"></i></li>
-            <ul class="sub-menu" id="sub-menu">
-                <li><a href="#">Profile</a></li>
-                <li><a href="signup.html">Sign Up</a></li>
-                <li><a href="#">Sign Out</a></li>
-            </ul>
-        </ul>
-    </div>
-    <div class="order-container">
-        <div class="row grid-view">
-            <div class="aside">asdie </div>
-            <div class="section">
-                <form action="#" id="data-form">
-                    <div class="label-holder">
-                        <label class="search" for="name">Name</label>
-                        <label class="number-data" for="quantity">Quantity</label>
-                        <label class="number-data" for="price">Price</label>
-                        <label class="number-data" for="total-price">Total Price</label>
-                    </div>
-                    <div>
-                        <span class="search" id="food-name"></span>
-                        <span class="number-data" id="food-qty"></span>
-                        <span class="number-data" id="food-price"></span>
-                        <span class="number-data" id="food-total-price"></span>
-                    </div>
-                    <input type="text" name="Items" id="Items" placeholder="Search..." onchange="searchFood(event)">
-                    <input type="number" name="quantity" id="quantity" onchange="updateTotalPrice(event)" placeholder="00.000">
-                    <input type="number" name="price" id="price" placeholder="00.000">
-                    <input type="number" name="total-price" id="total-price" placeholder="00.000" disabled>
-                    <button type="submit">.</button>
-                </form>
-            </div>
-            <div class="aside">aside</div>
-        </div>
-        <div class="row">
-            footer container
-        </div>
-    </div>
+    <div id="includedHeader"></div> 
     
 </body>
-<script src="./assets/js/scripts.js"></script>
-<script>
-    let foodArray = [
-        {"name":"Qabuli","price":200,"stock":500},
-        {"name":"Kabab","price":200,"stock":500},
-        {"name":"Juice","price":100,"stock":500},
-        {"name":"ice cream","price":100,"stock":500},
-        {"name":"Shorba","price":200,"stock":500},
-        {"name":"Karayee","price":200,"stock":500},
-    ]
-    let selectedObj = null;
-    function searchFood(e){
-        console.log("searchin...");
-        let food = e.target.value;
-        foodArray.forEach(obj => {
-            if((obj.name).toLowerCase() === food.toLowerCase()){
-                selectedObj = obj;
-                document.getElementById("Items").value = obj.name;
-                document.getElementById("quantity").value = 1;
-                document.getElementById("price").value = obj.price;
-                document.getElementById("total-price").value = obj.price;
-            }
-        });
-    }
-    function updateTotalPrice(e){
-        let q = e.target.value;
-        let p = document.getElementById("price").value;
-        document.getElementById("total-price").value = Number(q) * Number(p);
-    }
-    document.querySelector("#data-form").onsubmit = function(){myFunction(event)};
-    function myFunction(e) {
-        e.preventDefault();
-        document.getElementById("food-name").innerHTML = selectedObj.name;
-        document.getElementById("food-qty").innerHTML = selectedObj.quantity;
-        document.getElementById("food-price").innerHTML = selectedObj.price;
-        document.getElementById("food-total-price").innerHTML = selectedObj.price;
-    }
-    
-
-</script>
-
 </html>

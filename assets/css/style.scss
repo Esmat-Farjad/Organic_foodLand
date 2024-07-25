@@ -212,7 +212,9 @@ button[type="button"]:hover{
 .slide-right-animation{
     animation: slideRight 1.5s ease-in-out 1;
 }
-
+.card-section:hover a{
+    color: rgb(44, 56, 59);
+}
 .card{
     overflow: hidden;
     width: 100%;
