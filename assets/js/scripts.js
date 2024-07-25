@@ -85,14 +85,3 @@ try{
 } catch(error){
     console.log("something went wrong");
 }
-// document.getElementById("spinner").innerHTML = '<i class="fa-solid fa-rotate fa-spin"></i>';
-// async function getData() {
-//     try{
-//         const data = await fetch("https://jsonplaceholder.typicode.com/todos/",{method: 'GET'});
-//         const result = await data.json();
-//         console.log(result);
-//         document.getElementById("spinner").innerHTML = result[0].title;
-//     } catch(error) {
-//         console.log(error);
-//     }
-// }

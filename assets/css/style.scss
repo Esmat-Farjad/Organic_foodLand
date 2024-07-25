@@ -102,13 +102,17 @@ button[type="button"]:hover{
 .navbar{
     margin: 0rem 10rem;
     display: flex;
+  
 }
 .navbar .logo-holder .icon-holder{
     display: none;
 }
 .navbar .logo-holder a img{
-    width: 100px;
+    width: 130px;
     padding: 3px 0px;
+}
+.navbar .nav-items{
+    padding-top: 10px;
 }
 .navbar .nav-items .nav-link{
     display: inline;
@@ -686,6 +690,7 @@ button[type="button"]:hover{
     padding: 0px;
     margin: 0px;
 }
+// meal styling
 .not-active{
     display: none;
 }
@@ -735,4 +740,13 @@ button[type="button"]:hover{
 }
 .select-element .select-title .select-amenity .icon-chevron{
     margin-left: 16px;
+}
+// location styling
+.location-container{
+    background-color: #f0f4f5;
+    padding: 2rem;
+    border: 1px solid #f0f4f5;
+}
+.light-heading{
+    font-weight: lighter;
 }
