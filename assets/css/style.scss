@@ -945,3 +945,27 @@ button[type='reset']:hover{
     font-weight: bold;
     font-size: 14px;
 }
+.table-holder{
+    margin: 1rem 0rem;
+    border-bottom: 2px solid lightgray;
+    padding-bottom: 1rem;
+}
+.table-holder table{
+    width: 100%;
+}
+.table-holder table tr td{
+    padding: 5px 0px;
+    font-weight: bold;
+}
+.payment-info{
+    color: gray;
+    font-weight: 500;
+    padding-bottom: 10px;
+    border-bottom: 2px solid lightgray;
+}
+.payment-info .listing{
+    padding: 5px 0px;
+}
+.payment-info .listing .float-right{
+    float: right;
+}
