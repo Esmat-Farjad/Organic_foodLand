@@ -999,4 +999,50 @@ button[type=reset]:hover {
     transform: translateY(0px);
     opacity: 1;
   }
+}
+.appreciation {
+  margin-top: 4rem;
+  padding: 1rem;
+}
+
+.summary {
+  background-color: rgb(241, 241, 241);
+  padding: 1rem 2rem;
+  border-radius: 5px;
+}
+
+.summary .tab-info {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 1rem 0rem;
+  border-bottom: 2px dashed lightgrey;
+}
+
+.summary .title {
+  font-weight: bold;
+  padding: 1.5rem 0rem;
+  border-bottom: 2px solid lightgray;
+}
+
+.summary .tab-info .border-right {
+  border-right: 2px solid rgb(179, 179, 179);
+}
+
+.summary .tab-info .info-holder {
+  padding: 0rem 1rem 0rem 1rem;
+  width: 30%;
+}
+
+.summary .tab-info .info-holder p {
+  text-transform: capitalize;
+  padding: 5px 0px;
+  margin: 0px;
+  font-weight: bold;
+  color: gray;
+}
+
+.summary .tab-info .info-holder span {
+  font-weight: bold;
+  font-size: 14px;
 }/*# sourceMappingURL=style.css.map */
