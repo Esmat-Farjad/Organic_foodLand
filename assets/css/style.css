@@ -1116,4 +1116,11 @@ button[type=reset]:hover {
   -o-object-fit: cover;
      object-fit: cover;
   display: inline;
+}
+
+.appreciation h1 {
+  font-weight: bold;
+  margin: 0px;
+  font-size: 42px;
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */
