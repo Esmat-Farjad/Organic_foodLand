@@ -950,11 +950,11 @@ button[type=reset]:hover {
 }
 
 .order-confirmation {
-  background-image: linear-gradient(#33c7d8, #1fbdd2);
+  background-image: linear-gradient(#5defff, #1fbdd2);
   color: rgb(255, 249, 239);
   padding: 3rem 1rem 1rem 1rem;
   border-radius: 5px;
-  filter: drop-shadow(10px 10px 50px gray);
+  filter: drop-shadow(3px 3px 30px gray);
   animation: fadeUp 1s ease-in-out 1;
 }
 
@@ -962,7 +962,7 @@ button[type=reset]:hover {
   border: 1px solid rgb(2, 224, 224);
   padding: 1rem;
   border-radius: 10px;
-  background-image: linear-gradient(#83dfe9, #53d1df);
+  background-image: linear-gradient(#a4f6ff, #53d1df);
 }
 
 .order-confirmation .popup-alert .title {
