@@ -860,3 +860,48 @@ button[type='reset']:hover{
 .button-holder{
     margin: 0.5rem 0rem;
 }
+// order confirmation
+.order-confirmation{
+    background-image: linear-gradient(#33c7d8,#1fbdd2);
+    color: rgb(255, 249, 239);
+    padding: 3rem 1rem 1rem 1rem;
+    border-radius: 5px;
+    animation: fadeUp 1s ease-in-out 1;
+}
+.order-confirmation .popup-alert{
+    border: 1px solid rgb(2, 224, 224);
+    padding: 1rem;
+    border-radius: 10px;
+    background-image: linear-gradient(#83dfe9, #53d1df);
+}
+.order-confirmation .popup-alert .title{
+    text-transform: capitalize;
+}
+.order-confirmation .popup-alert .description{
+    font-size: medium;
+    font-weight: 600;
+    margin: 1rem 0rem;
+}
+.confirm-btn{
+    padding: 5px 10px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid #7fe9f5;
+    color: white;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    
+}
+.confirm-btn:hover{
+    border: 1px solid cyan;
+    font-weight: bold;
+}
+@keyframes fadeUp {
+    from{
+        transform: translateY(360px); opacity: 0;
+    } to{
+        transform: translateY(0px); opacity: 1;
+    }
+    
+    
+}
