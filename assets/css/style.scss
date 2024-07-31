@@ -949,10 +949,35 @@ button[type='reset']:hover{
     margin: 1rem 0rem;
     border-bottom: 2px solid lightgray;
     padding-bottom: 1rem;
-
+    display: flex;
+    flex-direction: row;
 }
-
-
+.table-holder .image{
+    width: 15%;
+    height: 70px;
+    padding: 0px 1rem;
+}
+.table-holder .text{
+    width: 60%;
+    font-weight: 500;
+}
+.table-holder .text h4{
+    padding: 0px;
+    margin: 0px;
+}
+.table-holder .text .sub-text{
+    padding: 0px;
+    margin: 0px;
+    color: gray;
+    font-size: 12px;
+    font-weight: 600;
+}
+.table-holder .price{
+    width: 20%;
+    text-align: right;
+    padding: auto 0px;
+    
+}
 .payment-info{
     color: gray;
     font-weight: 500;
@@ -973,9 +998,9 @@ button[type='reset']:hover{
     float: right;
 }
 .ordered-food{
-    width: 12%;
-    height: 12%;
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
     object-fit: cover;
-    border:1px solid black;
+    display: inline;
 }
