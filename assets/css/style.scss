@@ -866,6 +866,7 @@ button[type='reset']:hover{
     color: rgb(255, 249, 239);
     padding: 3rem 1rem 1rem 1rem;
     border-radius: 5px;
+    filter: drop-shadow(10px 10px 50px gray);
     animation: fadeUp 1s ease-in-out 1;
 }
 .order-confirmation .popup-alert{
@@ -898,7 +899,7 @@ button[type='reset']:hover{
 }
 @keyframes fadeUp {
     from{
-        transform: translateY(360px); opacity: 0;
+        transform: translateY(160px); opacity: 0;
     } to{
         transform: translateY(0px); opacity: 1;
     }
