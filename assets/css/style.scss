@@ -912,6 +912,14 @@ button[type='reset']:hover{
     background-color: $gray;
     padding: 1rem 2rem;
     border-radius: 5px;
+    position: relative;
+}
+.summary .pin-label{
+    padding: 1rem 0.5rem;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .summary .tab-info{
     display: flex;
