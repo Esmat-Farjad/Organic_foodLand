@@ -949,30 +949,34 @@ button[type='reset']:hover{
     margin: 1rem 0rem;
     border-bottom: 2px solid lightgray;
     padding-bottom: 1rem;
+    
+}
+.table-holder .list-contianer{
     display: flex;
     flex-direction: row;
+    margin: 5px 0px;
 }
-.table-holder .image{
+.table-holder .list-contianer .image{
     width: 15%;
     height: 70px;
     padding: 0px 1rem;
 }
-.table-holder .text{
+.table-holder .list-contianer .text{
     width: 60%;
     font-weight: 500;
 }
-.table-holder .text h4{
+.table-holder .list-contianer .text h4{
     padding: 0px;
     margin: 0px;
 }
-.table-holder .text .sub-text{
+.table-holder .list-contianer .text .sub-text{
     padding: 0px;
     margin: 0px;
     color: gray;
     font-size: 12px;
     font-weight: 600;
 }
-.table-holder .price{
+.table-holder .list-contianer .price{
     width: 20%;
     text-align: right;
     padding: auto 0px;
@@ -1005,9 +1009,36 @@ button[type='reset']:hover{
     display: inline;
 }
 // appreciation style
-.appreciation h1{
+.appreciation .title{
+    font-size: 52px;
+    font-weight: lighter;
+    text-transform: capitalize;
+    i{
+        color: orange;
+    }
+}
+.appreciation .description{
+    font-size: medium;
+    font-weight: lighter;
+}
+.appreciation .billing-address table{
+    width: 100%;
+    margin: 2rem 0rem;
+}
+.appreciation .billing-address table tr td{
+    padding: 5px 0px;
+}
+.font-bold{
     font-weight: bold;
-    margin: 0px;
-    font-size: 42px;
-    font-weight: bold;
+}
+.track-order button{
+    outline: none;
+    background-color: $gray;
+    padding: 0.5rem 1rem;
+    border: 1px solid $gray;
+    transition: all 0.3s;
+}
+.track-order button:hover{
+    font-weight: 600;
+
 }
