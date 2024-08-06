@@ -916,7 +916,7 @@ button[type='reset']:hover{
 }
 .summary .pin-label{
     padding: 1rem 0.5rem;
-    background-image: linear-gradient(rgb(252, 127, 127,0.5),rgb(245, 74, 74));
+    background-image: linear-gradient(red,rgb(0,0,0,0.8));
     border: 1px solid $gray;
     font-weight: 600;
     position: absolute;
