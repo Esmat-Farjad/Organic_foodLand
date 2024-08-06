@@ -139,28 +139,45 @@ button[type=button]:hover {
   position: relative;
 }
 
-.home {
+body {
+  position: relative;
+}
+
+.homepage {
+  background-image: url("../images/hompage.jpg");
+  border: 1px solid white;
+  width: 100%;
+  height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(75%) blur(1.5px);
+}
+
+.main-heading {
   position: absolute;
-  top: 25%;
-  left: 30%;
+  top: 7%;
+  bottom: 93%;
+  left: 20%;
+  right: 20%;
+  text-align: center;
+  color: white;
+  filter: drop-shadow(0 0 10px gray);
 }
 
-.home .heading-content .heading-text {
-  font-size: 52px;
-  font-weight: bold;
+.main-heading .title {
+  text-transform: capitalize;
+  font-size: 3.5vw;
   padding: 0px;
-  margin: auto;
-}
-
-.home .heading-content .heading-sub-text {
-  padding-top: 0px;
-  padding-bottom: 20px;
-  font-weight: 400;
   margin: 0px;
+  font-weight: 500;
 }
 
-.heading-content .brand-name {
-  color: teal;
+.main-heading .description {
+  font-size: 1vw;
+  padding: 0px;
+  margin: 0px;
+  font-weight: 400;
 }
 
 .apply-animation-left {
