@@ -180,6 +180,7 @@ body{
     font-weight: 700;
     transition: all 0.5s;
 }
+
 // animation
 @keyframes slideLeft{
     from {
@@ -224,7 +225,9 @@ body{
 .slide-up-animation{
     animation: slideUp 1.5s ease-in-out 1;
 }
-.slide-left-animation{
+.slide-left-animation{.contact-us{
+    margin-bottom: 3rem;
+}
     animation: slideLeft 1.5s ease-in-out 1;
 }
 .slide-right-animation{
@@ -424,7 +427,12 @@ body{
     height: 100%;
 
 }
-
+.section-holder .contact-info{
+    margin: 2rem 0rem;
+}
+.section-holder .location-holder{
+    margin: 2rem 0rem;
+}
 .section-holder .contact-info .contact{
     margin: 1rem;
 }

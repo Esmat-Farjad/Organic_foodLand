@@ -237,6 +237,9 @@ body {
 .slide-left-animation {
   animation: slideLeft 1.5s ease-in-out 1;
 }
+.slide-left-animation .contact-us {
+  margin-bottom: 3rem;
+}
 
 .slide-right-animation {
   animation: slideRight 1.5s ease-in-out 1;
@@ -462,6 +465,14 @@ body {
   border: none;
   width: 100%;
   height: 100%;
+}
+
+.section-holder .contact-info {
+  margin: 2rem 0rem;
+}
+
+.section-holder .location-holder {
+  margin: 2rem 0rem;
 }
 
 .section-holder .contact-info .contact {
