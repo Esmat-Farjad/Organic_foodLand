@@ -180,7 +180,18 @@ body{
     font-weight: 700;
     transition: all 0.5s;
 }
-
+@keyframes zoomIn {
+    from{
+        transform: translateZ(300px);
+        opacity: 0;
+    } to{
+        transform: translateZ(0px);
+        opacity: 1;
+    }
+}
+.zoom-animation{
+    animation: zoomIn 1.5s ease-in-out 1;
+}
 // animation
 @keyframes slideLeft{
     from {
@@ -204,7 +215,7 @@ body{
 }
 @keyframes slideUp{
     from {
-        transform: translateY(250px);
+        transform: translateY(150px);
         opacity: 0;
     }
     to {
