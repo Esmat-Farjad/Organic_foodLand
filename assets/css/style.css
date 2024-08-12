@@ -802,7 +802,11 @@ body {
 }
 
 .not-active {
-  display: none;
+  visibility: hidden;
+}
+
+.active {
+  visibility: visible;
 }
 
 .rotate-element {
@@ -889,7 +893,7 @@ body {
   padding: 0px;
 }
 
-.description .restaurant-name, li {
+.description .restaurant-name, .list-item {
   display: inline;
   padding: 0xp;
   margin: 0px;
@@ -901,13 +905,13 @@ body {
   padding: 0px;
 }
 
-.description .combinations, li {
+.description .combinations, .list-item {
   display: inline;
   padding: 0xp;
   margin: 0px;
 }
 
-.description .combinations, li a {
+.description .combinations, .list-item a {
   margin-right: 8px;
 }
 

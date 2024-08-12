@@ -732,9 +732,10 @@ body{
 }
 // meal styling
 .not-active{
-    display: none;
+    visibility: hidden;}
+.active{
+    visibility: visible;
 }
-
 .rotate-element{
     transform: rotate(180deg);
     transition: transform 0.5s ease;
@@ -811,7 +812,7 @@ body{
     margin: 1rem 0rem;
     padding: 0px;
 }
-.description .restaurant-name,li{
+.description .restaurant-name, .list-item{
     display: inline;
     padding: 0xp;
     margin: 0px;
@@ -821,12 +822,12 @@ body{
     margin: 0px;
     padding: 0px;
 }
-.description .combinations, li{
+.description .combinations, .list-item{
     display: inline;
     padding: 0xp;
     margin: 0px;
 }
-.description .combinations, li a{
+.description .combinations, .list-item a{
     margin-right: 8px;
 }
 .description .timing{

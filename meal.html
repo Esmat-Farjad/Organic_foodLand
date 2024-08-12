@@ -16,32 +16,32 @@
 <body> 
     <div id="includedHeader"></div> 
     <div class="section-holder">
-        <div class="tab-holder">
+        <div class="tab-holder" style="z-index: 100;">
             <h2 class="text-light">All Listing</h2>
             <div class="more-location">
                 <div class="select-holder">
                     <div class="select-element">
                         <!-- select title -->
                         <div class="select-title">
-                            <p class="title">Food</p>
+                            <p class="title">Location</p>
                             <div class="select-amenity">
-                                select food amenity
+                                select location amenity 
                                 <i class="icon-chevron fa-solid fa-chevron-down"></i>
                             </div>
                         </div>
                         <!-- select options -->
                         <div class="select-options not-active">
                             <ul>
-                                <li><a href="#">Qabuli Palow</a></li>
-                                <li><a href="#">Kabab</a></li>
-                                <li><a href="#">Karayee</a></li>
+                                <li><a href="#">Kabul</a></li>
+                                <li><a href="#">Balkh</a></li>
+                                <li><a href="#">Bamyan</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="select-element">
                         <!-- select title -->
                         <div class="select-title">
-                            <p class="title">Food</p>
+                            <p class="title">Location</p>
                             <div class="select-amenity">
                                 select location amenity 
                                 <i class="icon-chevron fa-solid fa-chevron-down"></i>
@@ -60,7 +60,7 @@
             </div>
         </div>
     </div>
-    <div class="section-holder">
+    <div class="section-holder" style="z-index: 0;">
         <div class="item-holder">
             <div class="card-section">
                 <div class="card">
@@ -127,7 +127,7 @@
             const icon = amenity.querySelector(".icon-chevron");
             const selectOption = select.querySelector(".select-options");
             selectTitle.addEventListener("click",() => {
-                selectOption.classList.toggle("not-active");
+                selectOption.classList.toggle("active");
                 icon.classList.toggle("rotate-element");
             });  
     });
