@@ -360,7 +360,10 @@ body {
 
 .newsletter .header .icon {
   font-size: 50px;
-  color: teal;
+  background: linear-gradient(to right, #ED008C, #FFF000);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .newsletter .header .title {
@@ -369,6 +372,10 @@ body {
   font-weight: bold;
   padding: 0px;
   margin: 0px;
+  background: linear-gradient(to right, #ED008C, #FFF000);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .newsletter .header .subtitle {
@@ -422,15 +429,16 @@ body {
 }
 
 .custom-btn {
-  padding: 0.7rem 0.2rem;
-  outline: none;
-  border: 1px solid gray;
-  background-color: teal;
+  padding: 12px 15px;
+  display: inline;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
   color: white;
   font-weight: bold;
-  border-bottom-right-radius: 5px;
-  border-top-right-radius: 5px;
-  display: inline;
+  background-image: linear-gradient(to right, #ED008C, #FFF000);
+  outline: none;
+  border: 1px solid gray;
+  cursor: pointer;
   position: absolute;
   top: 0;
   right: 0;
