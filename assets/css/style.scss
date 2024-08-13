@@ -858,8 +858,40 @@ body{
 .description .timing{
     color: gray;
 }
-.text-red{
+.remeber-me{
     color: orange;
+}
+.tooltip{
+    position: relative;
+}
+.tooltip .tooltip-text{
+    visibility: hidden;
+    background-color: #2f3233;
+    color: white;
+    width: 150px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -70%;
+    left: 135%;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.tooltip:hover .tooltip-text{
+    visibility: visible;
+    opacity: 1;
+}
+.tooltip .tooltip-text::after{
+    content: "";
+    position: absolute;
+    top: 36%;
+    left: -6%;
+    border-color:  transparent #2f3233 transparent transparent;
+    border-width: 5px;
+    border-style: solid;
+
 }
 // order form styling
 .input-text{
