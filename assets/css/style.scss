@@ -783,9 +783,9 @@ body{
 }
 // meal styling
 .not-active{
-    visibility: hidden;}
+    display: none;}
 .active{
-    visibility: visible;
+    display: block;
 }
 .rotate-element{
     transform: rotate(180deg);
@@ -797,7 +797,16 @@ body{
     flex-wrap: nowrap;
     gap: 5px;
 }
-
+.select-element{
+    position: relative;
+}
+.select-element .select-options{
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    right: 0%;
+    z-index: 1;
+}
 .select-element .select-options ul{
     margin: 0px;
     padding: 0px;

@@ -859,11 +859,11 @@ body {
 }
 
 .not-active {
-  visibility: hidden;
+  display: none;
 }
 
 .active {
-  visibility: visible;
+  display: block;
 }
 
 .rotate-element {
@@ -876,6 +876,18 @@ body {
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 5px;
+}
+
+.select-element {
+  position: relative;
+}
+
+.select-element .select-options {
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  right: 0%;
+  z-index: 1;
 }
 
 .select-element .select-options ul {
