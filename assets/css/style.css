@@ -122,6 +122,12 @@ button[type=button]:hover {
 .navbar .nav-items .nav-link {
   display: inline;
   margin: 0rem 1rem;
+  cursor: pointer;
+}
+
+.nav-items .nav-link:hover {
+  color: teal;
+  transition: all 0.3s;
 }
 
 .navbar .nav-items .sub-menu {
@@ -137,6 +143,23 @@ button[type=button]:hover {
   background-blend-mode: darken;
   background-repeat: no-repeat;
   position: relative;
+}
+
+.badge-holder {
+  position: relative;
+}
+
+.badge-holder .badge {
+  position: absolute;
+  font-size: 0.63rem;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+  top: -70%;
+  left: 100%;
+  background-color: rgb(235, 2, 2);
+  padding: 1px 5px;
+  border-radius: 12px;
 }
 
 body {
@@ -182,12 +205,6 @@ body {
 
 .apply-animation-left {
   animation: slideLeft 1.5s ease-in-out 1;
-}
-
-.nav-items .nav-link:hover {
-  color: teal;
-  font-weight: 700;
-  transition: all 0.5s;
 }
 
 @keyframes zoomIn {
