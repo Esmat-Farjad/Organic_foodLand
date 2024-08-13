@@ -813,6 +813,23 @@ body {
 .grid-system .image-grid {
   overflow: hidden;
   margin: 0px auto;
+  position: relative;
+}
+
+.image-grid .tips-for-order {
+  position: absolute;
+  top: 13%;
+  left: 60%;
+  width: 150px;
+  color: black;
+  background-color: rgb(255, 234, 195);
+  font-weight: 300;
+  text-align: center;
+  padding: 10px;
+  color: black;
+  border-radius: 5px;
+  border: 1px solid orange;
+  text-transform: capitalize;
 }
 
 .grid-system .image-grid .image-holder img {
