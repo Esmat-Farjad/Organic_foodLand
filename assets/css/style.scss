@@ -760,11 +760,24 @@ body{
     border: 1px solid orange;
     text-transform: capitalize;
 }
+.user-rating{
+    border: 1px solid $gray;
+    padding: 1rem;
+    border-radius: 5px;
+}
+.user-rating .text{
+    padding-top: 0px;
+    margin-top: 0px;
+    color: gray;
+    font-size: 14px;
+}
+.stars{
+    color: orange;
+}
 .grid-system .image-grid .image-holder img{
     width: fit-content;
     height: 400px;
     border-bottom: 3px solid orange;
-    
 }
 .manual-grid .title{
     font-weight: 600;

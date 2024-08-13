@@ -832,6 +832,23 @@ body {
   text-transform: capitalize;
 }
 
+.user-rating {
+  border: 1px solid rgb(241, 241, 241);
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.user-rating .text {
+  padding-top: 0px;
+  margin-top: 0px;
+  color: gray;
+  font-size: 14px;
+}
+
+.stars {
+  color: orange;
+}
+
 .grid-system .image-grid .image-holder img {
   width: -moz-fit-content;
   width: fit-content;

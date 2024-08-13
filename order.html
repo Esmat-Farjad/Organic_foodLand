@@ -26,6 +26,17 @@
                 </div>
                 <div class="info-holder">
                     <h1 class="title">Chiken Tika kabab</h1>
+                    <p class="user-rating">
+                        <span style="color: orange;">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            
+                        </span>
+                        <span>4/5</span>
+                    </p>
                     <div class="description">
                        <ul class="restaurant-names">
                             <li class="list-item"><a href="#">Ziyafat</a></li>
@@ -41,6 +52,17 @@
                             <small class="text-red">Open Now - </small>
                             <small>08:00am - 10:00pm</small>
                         </p>
+                    </div>
+                    <div class="user-rating">
+                        <p class="text">How much did you like the food? Please give it a rating!</p>
+                        <span class="stars">
+                            <i class="fa-regular fa-star rate"></i>
+                            <i class="fa-regular fa-star rate"></i>
+                            <i class="fa-regular fa-star rate"></i>
+                            <i class="fa-regular fa-star rate"></i>
+                            <i class="fa-regular fa-star rate"></i>
+                        </span>&nbsp;
+                        <span id="rate-counter"></span>/5
                     </div>
 
                 </div>
@@ -96,4 +118,32 @@
     </div>
 
 </body>
+<script>
+    
+    const star = document.querySelectorAll(".rate");
+    let counter = 0;
+    star.forEach(element => {
+        
+        element.addEventListener("click", (e) => {
+            
+            if(element.classList.contains("fa-regular")){
+                element.classList.remove("fa-regular");
+                element.classList.add("fa-solid");
+                counter++;
+            } else if(element.classList.contains("fa-solid")){
+                element.classList.remove("fa-solid");
+                element.classList.add("fa-regular");
+                counter--;
+            }
+            document.getElementById("rate-counter").innerHTML = counter;
+            
+        }); 
+            
+    });
+    document.getElementById("rate-counter").innerHTML = counter;
+
+    
+    
+
+</script>
 </html>
