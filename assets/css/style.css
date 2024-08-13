@@ -301,6 +301,12 @@ body {
   padding: 10px 0px;
   display: block;
   background-color: inherit;
+  width: 100%;
+}
+
+.card-footer .title .price {
+  font-weight: bold;
+  float: inline-end;
 }
 
 .card-footer .sub-title {
