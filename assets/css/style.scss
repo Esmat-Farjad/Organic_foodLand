@@ -69,16 +69,16 @@ a:hover{
 }
 @mixin simple-button{
     border: none;
-    border-radius: 5px;
+    border-radius: 2px;
     padding: 5px 10px;
-    background-color: rgb(206, 206, 206);
-    font-weight: 600;
+    background-color: #f0f4f5;
+    font-weight: 400;
     cursor: pointer;
 }
 @mixin simple-button-hover{
     background-color: teal;
     color: white;
-    font-weight: 600;
+    font-weight: 500;
     transition: all 0.2s ease-in-out;
 }
 button[type="button"]{
@@ -244,6 +244,27 @@ body{
 .slide-right-animation{
     animation: slideRight 1.5s ease-in-out 1;
 }
+.classifications{
+    border-bottom: 1px solid $gray;
+    text-align: center;
+    width: fit-content;
+    padding: 10px ;
+}
+.classifications .menu{
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    font-weight: 600;
+    display: inline;
+    color: gray;
+}
+.classifications .menu .menu-item{
+    display: inline;
+    cursor: pointer;
+    padding-bottom: 9px;
+    margin: 0rem 0.5rem;
+}
+
 .card-section:hover a{
     color: rgb(44, 56, 59);
 }
