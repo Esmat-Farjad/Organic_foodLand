@@ -1204,3 +1204,52 @@ button[type='reset']:hover{
     font-weight: 600;
 
 }
+// user location input
+.user-location{
+    width: 20%;
+    margin: 5px auto;
+    
+}
+.user-location .search-location-form .search-input{
+    width: 100%;
+    height: 3rem;
+    padding-left: 1rem;
+    outline: none;
+    border: 1px solid $gray;
+    border-radius: 50px;
+}
+.user-location .search-location-form{
+    position: relative;
+}
+.user-location .search-location-form .search-icon{
+    color: rgb(158, 158, 158);
+    font-size: large;
+    position: absolute;
+    top: 27%;
+    right: 5%;
+}
+datalist option{
+    background-color: white;
+}
+// error styling
+body{
+    position: relative;
+}
+.notification-message{
+    background-color: rgb(139, 139, 139);
+    margin: 5px auto;
+    position: fixed;
+    padding: 0.5rem;
+    text-align: center;
+    color: white;
+    top: 90%;
+    left: 40%;
+    right: 40%;
+    border-radius: 50px;
+    font-weight: 600;
+    z-index: 10;
+    box-shadow: 0 0 16px lightgray;
+    transition: all 0.5s ease-in-out;
+    display: none;
+}
+
