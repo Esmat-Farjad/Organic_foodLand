@@ -1252,4 +1252,23 @@ body{
     transition: all 0.5s ease-in-out;
     display: none;
 }
+.notify{
+    position: absolute;
+    top: 8%;
+    right: 25%;
+    background-color: #515758;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+}
+.notify::after{
+    content: "";
+    position: absolute;
+    top: -28%;
+    left: 50%;
+    border-color:  transparent  transparent #515758 transparent;
+    border-width: 5px;
+    border-style: solid;
 
+
+}

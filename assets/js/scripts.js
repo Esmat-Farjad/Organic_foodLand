@@ -56,4 +56,10 @@ if ("geolocation" in navigator) {
     console.log("Geolocation is not supported by this browser.");
 }
 
+    if(document.getElementById("search-location").value=''){
+        document.querySelector(".notify").classList.remove("not-active");
+    } else {
+        document.querySelector(".notify").classList.add("not-active");
+    }
+
 }
