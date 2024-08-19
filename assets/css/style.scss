@@ -11,7 +11,17 @@
 .text-teal{
     color: teal;
 }
-
+.required::after{
+    content: "*";
+    color: red;
+}
+.secure-area{
+    color: white;
+    font-weight: 600;
+    background-color: #73d393;
+    padding: 1rem;
+    border-radius: 5px;
+}
 html{
     scroll-behavior: smooth;
 }
@@ -23,7 +33,6 @@ body{
     font-weight: lighter;
 }
 a{
-    background-color: white;
     text-decoration: none;
     color: rgb(80, 79, 79);
 }
@@ -59,6 +68,23 @@ a:hover{
 }
 .btn-holder{
     text-align: center;
+}
+.order-btn{
+    border: none;
+    border-radius: 2px;
+    padding: 5px 10px;
+    background-color: #f0f4f5;
+    font-weight: 400;
+    font-size: small;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-right: 5px;
+}
+.order-btn:hover{
+    color: white;
+    font-weight: 600;
+    background-color: orange;
+
 }
 .btn{
     @include button();
@@ -618,6 +644,15 @@ body{
     .main-page-container{
         filter: opacity(50%);
     }
+    .order-form{
+        width: 90%;
+    }
+    .card-container{
+        width: 90%;
+    }
+    .three-grid-items{
+        grid-template-columns: repeat(1,98%);
+    }
    
  
 }
@@ -643,6 +678,15 @@ body{
     .main-page-container{
         filter: opacity(70%);
     }
+    .order-form{
+        width: 90%;
+    }
+    .card-container{
+        width: 90%;
+    }
+    .three-grid-items{
+        grid-template-columns: repeat(1,98%);
+    }
     
 }
 @media only screen and (min-width: $xl)  {
@@ -666,6 +710,15 @@ body{
     }
     .main-page-container{
         filter: opacity(100%);
+    }
+    .order-form{
+        width: 70%;
+    }
+    .card-container{
+        width: 70%;
+    }
+    .three-grid-items{
+        grid-template-columns: repeat(3,30%);
     }
     
 }
@@ -691,6 +744,15 @@ body{
     }
     .main-page-container{
         filter: opacity(100%);
+    }
+    .order-form{
+        width: 70%;
+    }
+    .card-container{
+        width: 70%;
+    }
+    .three-grid-items{
+        grid-template-columns: repeat(3,30%);
     }
     
     
@@ -1013,14 +1075,32 @@ textarea{
 }
 .order-form{
     padding: 0rem 1.5rem;
+    margin: 0rem auto;
 }
-.quantity{
-    display: block;
-    border: 1px solid $gray;
-    padding: 10px;
-    width: 90%;
-    margin-bottom: 10px;
-
+.three-grid-items{
+    display: grid;
+}
+.three-grid-items div{
+    margin: 0rem 1rem;
+}
+.mode-of-payment{
+    margin: 1rem 0rem;
+}
+.mode-of-payment label{
+    font-size: medium;
+    font-weight: 500;
+    margin-right: 2rem;
+}
+.card-payment-form{
+    transition: all 0.3s;
+}
+input[type="radio"]{
+    accent-color: #a52824;
+    align-items: center;
+    height: 1.2rem;
+    width: 1.2rem;
+    
+    vertical-align: bottom;
 }
 .flex-container{
     display: flex;
@@ -1269,6 +1349,47 @@ body{
     border-color:  transparent  transparent #515758 transparent;
     border-width: 5px;
     border-style: solid;
+}
+.card-container{
+    margin: 2rem auto;
+}
+.table{
+    width: 100%;
+}
+.card-table tr{
+    text-align: center;
+    border-bottom: 1px solid $gray;
+    background-color: $gray;
+}
+.card-table thead tr th{
+    background-color: orange;
+    color: white;
+    padding: 5px;
+}
+.card-table tr td{
+    padding: 0.8rem 0rem;
+    border-bottom: 1px solid $gray;
+}
+.card-table tbody .total-payment{
+    font-weight: 600;
+    color: gray;
+}
+.number-input{
+    outline: none;
+    border: none;
+    background-color: inherit;
+    text-align: center;
+    width: 30px;
+    padding: 5px;
+    border-radius: 3px;
+    font-weight: 600;
+}
+.number-input:focus{
+    border: 1px solid orange;
 
-
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
