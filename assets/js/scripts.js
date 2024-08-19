@@ -63,3 +63,19 @@ if ("geolocation" in navigator) {
     }
 
 }
+function increase(){
+    let currentValue = document.getElementById("number-input").value;
+    intValue = Number(currentValue);
+    intValue++;
+    document.getElementById("number-input").value = intValue;
+}
+function decrease(){
+    let currentValue = document.getElementById("number-input").value;
+    if(Number(currentValue) > 0) {
+        intValue = Number(currentValue);
+        intValue--;
+        document.getElementById("number-input").value = intValue;
+    } else {
+        document.getElementById("number-input").style.border = "1px solid red";
+    }
+}
