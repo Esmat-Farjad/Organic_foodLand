@@ -19,12 +19,106 @@
         please select your location first.
     </div>
     <div class="section-holder">
-        
         <div class="headin">
             <h1 class="light-heading">Place Your Order</h1>
         </div>
-        <div class="two-col-grid">
-            <div class="food-holder">
+        <div class="form-container">
+            <div class="order-form">
+                <h2 class="light-heading">No Need to have an account.</h2>
+                <form action="./_order_confirmation.html">
+                    <p>Enter your persoanl & Address information to deliver your meal</p>
+                    <label for="fullname">Full Name</label>
+                    <input type="text" name="fullname" id="fullname" class="input-text" placeholder="Tara Pe...">
+                    <label for="mobile">Active Phone Number</label>
+                    <input type="number" name="mobile" id="mobile" class="input-text" placeholder=" +93 700 0000">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" class="input-text" placeholder="example@abc.com">
+                    <label for="address">Delivery Address</label>
+                    <textarea name="address" id="address" placeholder="type your complete address..."></textarea>
+                    <div class="secure-area">
+                        <div class="mode-of-payment">
+                            <p>Select the Mode of Payment</p>
+                            <input type="radio" name="mode-of-payment" id="cash">
+                            <label for="cash">Cash on Delivery</label>
+                            <input type="radio" name="mode-of-payment" id="card">
+                            <label for="card">Card</label>
+                        </div>
+                        <div class="card-payment-form not-active">
+                            <div class="three-grid-items">
+                                <div class="first">
+                                    <label for="card-number" class="required">Card Number</label>
+                                    <input type="text" class="input-text" id="card-number" name="card-number" placeholder="987XXXXXX094">
+                                </div>
+                                <div class="second">
+                                    <label for="cvv" class="required">CVV</label>
+                                    <input type="number" class="input-text" id="cvv" name="cvv" placeholder="XXX">
+                                </div>
+                                <div class="third">
+                                    <label for="expiraton-date" class="required">Expiration Date</label>
+                                    <input type="date" class="input-text" id="expiraton-date" name="expiraton-date">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="checkbox" name="accept" id="accept" class="input-checkbox">
+                    <label for="accept">Remember me <span class="tooltip">
+                        <i class="remeber-me tooltip fa-solid fa-circle-exclamation"></i>
+                        <span class="tooltip-text">Stay logged in on this device.</span>
+                    </span>
+                    </label>
+                    <div class="button-holder">
+                        <button type="submit">Place Order</button>
+                        <button type="reset">Cancel</button>
+                    </div>
+                    <small class="text-teal">our deliveryman will contact you shortly after success order placement.</small>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    
+    // const star = document.querySelectorAll(".rate");
+    // let counter = 0;
+    // star.forEach(element => {
+        
+    //     element.addEventListener("click", (e) => {
+            
+    //         if(element.classList.contains("fa-regular")){
+    //             element.classList.remove("fa-regular");
+    //             element.classList.add("fa-solid");
+    //             counter++;
+    //         } else if(element.classList.contains("fa-solid")){
+    //             element.classList.remove("fa-solid");
+    //             element.classList.add("fa-regular");
+    //             counter--;
+    //         }
+    //         document.getElementById("rate-counter").innerHTML = counter;
+            
+    //     }); 
+            
+    // });
+    // document.getElementById("rate-counter").innerHTML = counter;
+    const radioCheck = document.querySelectorAll("input[type='radio']");
+    radioCheck.forEach(element => {
+        element.addEventListener("click", ()=>{
+            if(element.id == 'card' && element.checked){
+                document.querySelector(".card-payment-form").classList.remove("not-active");
+            } else {
+                document.querySelector(".card-payment-form").classList.add("not-active");
+
+            }
+        })
+    });
+
+    
+    
+
+</script>
+</html>
+<!-- 
+<div class="food-holder">
                 <div class="image-holder">
                     <img src="assets/images/kabab.jpg" alt="">
                 </div>
@@ -71,83 +165,4 @@
 
                 </div>
             </div>
-            <div class="order-form">
-                <h2 class="light-heading">No Need to have an account.</h2>
-                <div class="order-form">
-                    <form action="_order_confirmation.html">
-                        <p>Choose your meal size</p>
-                        <div class="flex-container">
-                            <div>
-                                <input type="checkbox" class="input-checkbox" name="large" id="large">
-                                <label for="large">Large</label>
-                                <input type="number" name="quantity" id="large" class="quantity" placeholder="Quantity..">
-                            </div>
-                            <div>
-                                <input type="checkbox" class="input-checkbox" name="medium" id="medium">
-                                <label for="medium">Medium</label>
-                                <input type="number" name="quantity" id="medium" class="quantity" placeholder="Quantity..">
-                            </div>
-                            <div>
-                                <input type="checkbox" class="input-checkbox" name="small" id="small">
-                                <label for="small">Small</label>
-                                <input type="number" name="quantity" id="small" class="quantity" placeholder="Quantity..">
-                            </div>
-                        </div>
-                        <p>Enter your persoanl & Address information to deliver your meal</p>
-                        <label for="fullname">Full Name</label>
-                        <input type="text" name="fullname" id="fullname" class="input-text" placeholder="Tara Pe...">
-                        <label for="mobile">Active Phone Number</label>
-                        <input type="number" name="mobile" id="mobile" class="input-text" placeholder=" +93 700 0000">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" class="input-text" placeholder="example@abc.com">
-                        <label for="address">Delivery Address</label>
-                        <textarea name="address" id="address" placeholder="type your complete address..."></textarea>
-                        <input type="checkbox" name="accept" id="accept" class="input-checkbox">
-                        <label for="accept">Remember me <span class="tooltip">
-                            <i class="remeber-me tooltip fa-solid fa-circle-exclamation"></i>
-                            <span class="tooltip-text">Stay logged in on this device.</span>
-                        </span>
-                        </label>
-
-                        
-                        <div class="button-holder">
-                            <button type="submit">Place Order</button>
-                            <button type="reset">Cancel</button>
-                        </div>
-                        <small class="text-teal">our deliveryman will contact you shortly after success order placement.</small>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</body>
-<script>
-    
-    const star = document.querySelectorAll(".rate");
-    let counter = 0;
-    star.forEach(element => {
-        
-        element.addEventListener("click", (e) => {
-            
-            if(element.classList.contains("fa-regular")){
-                element.classList.remove("fa-regular");
-                element.classList.add("fa-solid");
-                counter++;
-            } else if(element.classList.contains("fa-solid")){
-                element.classList.remove("fa-solid");
-                element.classList.add("fa-regular");
-                counter--;
-            }
-            document.getElementById("rate-counter").innerHTML = counter;
-            
-        }); 
-            
-    });
-    document.getElementById("rate-counter").innerHTML = counter;
-
-    
-    
-
-</script>
-</html>
+ -->
