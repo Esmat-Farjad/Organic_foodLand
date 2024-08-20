@@ -1092,7 +1092,7 @@ textarea{
     margin-right: 2rem;
 }
 .card-payment-form{
-    transition: all 0.3s;
+    transition: display 0.5s ease-in-out;
 }
 input[type="radio"]{
     accent-color: #a52824;
