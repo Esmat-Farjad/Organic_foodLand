@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <title>Place Order</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script> 
+            $(function(){
+              $("#includedHeader").load("header.html"); 
+            });
+        </script> 
+    </head>
+<body>
+    <div id="includedHeader"></div>
+    <div class="section-holder">
+        <div class="food-holder">
+            <div class="image-holder">
+                <img src="assets/images/kabab.jpg" alt="">
+            </div>
+            <div class="info-holder">
+                <h1 class="title" style="margin-bottom: 0px;">Chiken Tika kabab</h1>
+                <span style="color: orange;">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </span>
+                <span>4/5</span>
+                <p class="description">
+                    <strong>Combinations</strong>
+                    In publishing and graphic design, Lorem ipsum is 
+                    a placeholder text commonly used to demonstrate the 
+                    visual form of a document or a typeface without relying 
+                    on meaningful content. Lorem ipsum may be used as a 
+                    placeholder before the final copy is available. 
+                </p>
+                <div class="size">
+                    <h3>Size</h3>
+                    <input type="checkbox" id="large" checked style="accent-color: #00800b;">
+                    <label for="large">Large</label>
+                    <input type="checkbox" id="medium" checked style="accent-color: #008000;">
+                    <label for="medium">Medium</label>
+                    <input type="checkbox" id="small" checked style="accent-color: #008000;">
+                    <label for="small">Small</label>
+                </div>
+                <div class="description">
+                    <h3>Provider Restaurants</h3>
+                    <ul class="restaurant-names">
+                        <li class="list-item"><a href="#"><i class="fa-solid fa-hotel icon-design"></i>Ziyafat</a></li>
+                        <li class="list-item"><a href="#"><i class="fa-solid fa-hotel icon-design"></i>Mr Cook</a></li>
+                        <li class="list-item"><a href="#"><i class="fa-solid fa-hotel icon-design"></i>Turkmen Pulao</a></li>
+                    </ul>
+                    <h3>Suited Amenity</h3>
+                    <ul class="combinations">
+                        <li class="list-item"><a href="#"><i class="fa-solid fa-wine-glass-empty icon-design"></i>Bevrages</a></li>
+                        <li class="list-item"><a href="#"><i class="fa-solid fa-plate-wheat icon-design"></i>Salad</a></li>
+                        <li class="list-item"><a href="#"><i class="fa-solid fa-bowl-food icon-design"></i>Chatni</a></li>
+                    </ul>
+                    <p class="timing">
+                        <div class="button-holder">
+                            <button type="submit"><a href="order.html">Order Now</a></button>
+                            <button type="submit"><a href="#">Add to Cart</a></button>
+                        </div>
+                        <small class="text-red">Open Now - </small>
+                        <small>08:00am - 10:00pm</small>
+                    </p>
+                </div>
+                <div class="user-rating">
+                    <p class="text">How much did you like the food? Please give it a rating!</p>
+                    <span class="stars">
+                        <i class="fa-regular fa-star rate"></i>
+                        <i class="fa-regular fa-star rate"></i>
+                        <i class="fa-regular fa-star rate"></i>
+                        <i class="fa-regular fa-star rate"></i>
+                        <i class="fa-regular fa-star rate"></i>
+                    </span>&nbsp;
+                    <span id="rate-counter"></span>/5
+                </div>
+            </div>
+        </div>
+        <div class="recommendation">
+            <h2 class="">Recommended for you</h2>
+            <div class="card-holder">
+                <div class="item-holder">
+                    <div class="card-section">
+                        <a href="view.html">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="assets/images/food.avif" alt="Image Placeholder">
+                                </div>
+                                <div class="card-footer">
+                                    <span class="title">Fast Food
+                                        <span class="price">AFN 100</span>
+                                    </span>
+                                    <span class="sub-title">Tradional Recipe</span>
+                                    <span class="description">Lorem ipsum is a placeholder text commonly used to demonstrate </span>
+                                    <div class="buttons">
+                                        <a href="#" class="order-btn">
+                                            <i class="fa-solid fa-plus"></i> ADD
+                                        </a>
+                                        <a href="view.html" class="order-btn">
+                                            <i class="fa-solid fa-expand"></i> View
+                                        </a>
+                                    </div>
+                                </div>
+                                <span class="badge"><i class="fa-regular fa-clock"></i> 25 min</span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- one -->
+                    <div class="card-section">
+                        <a href="view.html">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="assets/images/kabab.jpg" alt="Image Placeholder">
+                                </div>
+                                <div class="card-footer">
+                                    <span class="title">Chiken Tika Kabab
+                                        <span class="price">AFN 200</span>
+                                    </span>
+                                    <span class="sub-title">Afghan Recipe</span>
+                                    <span class="description">Lorem ipsum is a placeholder text commonly used to demonstrate </span>
+                                    <div class="buttons">
+                                        <a href="#" class="order-btn">
+                                            <i class="fa-solid fa-plus"></i> ADD
+                                        </a>
+                                        <a href="view.html" class="order-btn">
+                                            <i class="fa-solid fa-expand"></i> View
+                                        </a>
+                                    </div>
+                                </div>
+                                <span class="badge"><i class="fa-regular fa-clock"></i> 25 min</span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- two -->
+                    <div class="card-section">
+                        <a href="view.html">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="assets/images/Karahi.jpg" alt="Image Placeholder">
+                                </div>
+                                <div class="card-footer">
+                                    <span class="title">Chiken Karahi
+                                        <span class="price">AFN 700</span>
+                                    </span>
+                                    <span class="sub-title">Pakistani Recipe</span>
+                                    <span class="description">Lorem ipsum is a placeholder text commonly used to demonstrate </span>
+                                    <div class="buttons">
+                                        <a href="#" class="order-btn">
+                                            <i class="fa-solid fa-plus"></i> ADD
+                                        </a>
+                                        <a href="view.html" class="order-btn">
+                                            <i class="fa-solid fa-expand"></i> View
+                                        </a>
+                                    </div>
+                                </div>
+                                <span class="badge"><i class="fa-regular fa-clock"></i> 25 min</span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- three -->
+                    <div class="card-section">
+                        <a href="view.html">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="assets/images/kabuli.jpg" alt="Image Placeholder">
+                                </div>
+                                <div class="card-footer">
+                                    <span class="title">Kabuli Pulao
+                                        <span class="price">AFN 300</span>
+                                    </span>
+                                    <span class="sub-title">Uzbek Recipe</span>
+                                    <span class="description">Lorem ipsum is a placeholder text commonly used to demonstrate </span>
+                                    <div class="buttons">
+                                        <a href="#" class="order-btn">
+                                            <i class="fa-solid fa-plus"></i> ADD
+                                        </a>
+                                        <a href="view.html" class="order-btn">
+                                            <i class="fa-solid fa-expand"></i> View
+                                        </a>
+                                    </div>
+                                </div>
+                                <span class="badge"><i class="fa-regular fa-clock"></i> 25 min</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </body>
+ <script>
+
+ </script>
+ </html>
