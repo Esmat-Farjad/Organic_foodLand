@@ -850,6 +850,9 @@ body {
     margin-right: 1rem;
     display: inline-block;
   }
+  .navbar .nav-items .nav-link:hover {
+    background-color: inherit;
+  }
 }
 .navbar .logo-holder a img {
   width: auto;
