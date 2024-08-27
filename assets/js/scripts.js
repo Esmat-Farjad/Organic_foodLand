@@ -8,7 +8,15 @@ document.querySelectorAll(".section-holder").forEach(e => {
     observer.observe(e)
 });
 document.querySelector(".main-heading").classList.add("zoom-animation");
+function closePopup(){
+    document.querySelector(".popup-overlay").classList.add("hide-popup");
+}
 window.onload = function(){
+    setTimeout(() => {
+        document.querySelector(".popup-overlay").classList.remove("not-active");
+    }, 3000);
+    document.querySelector(".popup-overlay").classList.add("not-active");
+    
 // Check if Geolocation is available in the browser
 if ("geolocation" in navigator) {
     // Request the current position
@@ -61,6 +69,7 @@ if ("geolocation" in navigator) {
     } else {
         document.querySelector(".notify").classList.add("not-active");
     }
+    
 
 }
 function increase(){
