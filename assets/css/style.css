@@ -736,6 +736,12 @@ body {
   .navbar .nav-items .nav-link:hover {
     background-color: rgb(241, 241, 241);
   }
+  .popup-overlay .popup-content {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    right: 10%;
+  }
 }
 @media only screen and (min-width: 768px) {
   .section-holder {
@@ -793,6 +799,12 @@ body {
   }
   .navbar .nav-items .nav-link:hover {
     background-color: rgb(241, 241, 241);
+  }
+  .popup-overlay .popup-content {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    right: 10%;
   }
 }
 @media only screen and (min-width: 1280px) {
@@ -852,6 +864,12 @@ body {
   }
   .navbar .nav-items .nav-link:hover {
     background-color: inherit;
+  }
+  .popup-overlay .popup-content {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    right: 30%;
   }
 }
 .navbar .logo-holder a img {
@@ -913,6 +931,12 @@ body {
   .navbar .nav-items .nav-link {
     margin-right: 1rem;
     display: inline;
+  }
+  .popup-overlay .popup-content {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    right: 30%;
   }
 }
 .section-holder .tab-holder {
@@ -1644,10 +1668,6 @@ input::-webkit-inner-spin-button {
   border-radius: 8px;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
   text-align: center;
-  position: absolute;
-  top: 30%;
-  left: 30%;
-  right: 30%;
   animation: fadeOut 0.3s 1;
 }
 
