@@ -1126,11 +1126,17 @@ body {
   list-style-type: none;
   font-size: small;
   border: 1px solid rgb(241, 241, 241);
+  background-color: white;
 }
 
 .select-element .select-options ul li {
   font-size: small;
   padding: 10px;
+}
+
+.select-element .select-options ul li:hover {
+  background-color: rgb(216, 248, 248);
+  color: black;
 }
 
 .select-element .select-title {

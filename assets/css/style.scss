@@ -1036,11 +1036,16 @@ body{
     list-style-type: none;
     font-size: small;   
     border: 1px solid $gray;
+    background-color: white;
     
 }
 .select-element .select-options ul li{
     font-size: small;
     padding: 10px; 
+}
+.select-element .select-options ul li:hover{
+    background-color: rgb(216, 248, 248);
+    color: black;
 }
 // custom select styling
 .select-element .select-title{
