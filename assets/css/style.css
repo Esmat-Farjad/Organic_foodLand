@@ -844,11 +844,11 @@ body {
     border: none;
     border-radius: none;
     box-shadow: none;
-    display: block;
+    display: inline;
   }
   .navbar .nav-items .nav-link {
     margin-right: 1rem;
-    display: inline-block;
+    display: inline;
   }
   .navbar .nav-items .nav-link:hover {
     background-color: inherit;
@@ -908,11 +908,11 @@ body {
     border: none;
     border-radius: none;
     box-shadow: none;
-    display: block;
+    display: inline;
   }
   .navbar .nav-items .nav-link {
     margin-right: 1rem;
-    display: inline-block;
+    display: inline;
   }
 }
 .section-holder .tab-holder {
