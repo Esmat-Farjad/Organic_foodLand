@@ -343,19 +343,24 @@
     <div class="popup-overlay not-active" id="popup-alert">
         <div class="popup-content">
             <div class="heading">
-                <h1>popup title</h1>
+                <h1>Set Your Location</h1>
             </div>
             <div class="body">
                 <p>
-                    this is the body
+                    Please allow the platform to locate your location or select your delivery end-point from the list below.
                 </p>
-                <div class="button-holder">
-                    <button type="submit">Submit</button>
-                    <button type="reset" onclick="closePopup()">Ignore</button>
-                </div>
+                <form action="#" class="search-form">
+                    <input type="search" class="search-input" placeholder="select your location">
+                    <i class="fa-solid fa-magnifying-glass fa-lg search-icon"></i>
+                    <div class="button-holder">
+                        <button type="submit">Submit</button>
+                        <button type="reset" onclick="closePopup()">Ignore</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
 </body>
 <script src="./assets/js/scripts.js"></script>
+
 </html>
